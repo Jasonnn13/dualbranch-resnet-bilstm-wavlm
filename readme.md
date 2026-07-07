@@ -169,21 +169,3 @@ All experiments were run on Kaggle's T4×2 GPU environment (PyTorch + torchaudio
 | BiLSTM                                       | 17.96%          | 28.64%          |
 | WavLM                                        | **3.62%** | 8.31%           |
 | **Hybrid (ResNet18 + BiLSTM + WavLM)** | 5.58%           | **7.63%** |
-
-**Key findings:**
-
-- The hybrid model wins every in-domain metric, confirming the two-stage frozen→fine-tuned training strategy stabilizes convergence.
-- Out-of-domain, WavLM alone edges out the hybrid on 2021 LA (3.62% vs. 5.58%), but the hybrid wins on the heavily-compressed 2021 DF subset (7.63% vs. 8.31%) — suggesting the ResNet18-BiLSTM branch adds complementary value specifically under heavy compression, arguably the more realistic in-the-wild condition.
-- BiLSTM alone fails badly on cross-domain data (28.64% on DF), but becomes useful *inside* the hybrid once it operates downstream of ResNet18's spatial features — the two components are complementary, not redundant.
-
-## References
-
-Key works this study builds on (full list of 32 in [`PreThesis.pdf`](PreThesis.pdf)):
-
-- N. Müller et al., [&#34;Does Audio Deepfake Detection Generalize?&#34;](https://arxiv.org/abs/2203.16263), 2022
-- X. Liu et al., [&#34;ASVspoof 2021: Towards Spoofed and Deepfake Speech Detection in the Wild&#34;](https://arxiv.org/pdf/2210.02437.pdf), 2022
-- J. Yamagishi et al., [&#34;ASVspoof 2021: accelerating progress in spoofed and deepfake speech detection&#34;](https://arxiv.org/pdf/2109.00537), 2021
-- S. Chen et al., [&#34;WavLM: Large-Scale Self-Supervised Pre-Training for Full Stack Speech Processing&#34;](https://arxiv.org/abs/2110.13900), IEEE JSTSP, 2022
-- P.-C. Chan, W.-Y. Chen, J.-C. Wang, [&#34;Enhancing Spoofing Detection in ASVspoof 5 Workshop 2024: Fusion of WavLM-ResNet18-SA&#34;](https://www.isca-archive.org/asvspoof_2024/chan24_asvspoof.html), 2024
-- K. Zaman et al., [&#34;Hybrid Transformer Architectures with Diverse Audio Features for Deepfake Speech Classification&#34;](https://ieeexplore.ieee.org/document/10714458), IEEE Access, 2024
-- S. Yadav, S. S. Mangalampalli, [&#34;Deepfake defense: Combining spatial and temporal cues with CNN–BiLSTM–transformer architecture&#34;](https://www.researchgate.net/publication/397626396_Deepfake_defense_Combining_spatial_and_temporal_cues_with_CNN-BiLSTM-transformer_architecture), PLOS One, 2025
