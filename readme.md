@@ -1,6 +1,6 @@
 # A Dual-Branch Hybrid Architecture Combining ResNet-BiLSTM and WavLM for Generalizable Audio Deepfake Detection
 
-Pre-thesis research project — Computer Science Department, School of Computer Science, Bina Nusantara University, Jakarta, Indonesia.
+Thesis research project — Computer Science Department, School of Computer Science, Bina Nusantara University, Jakarta, Indonesia.
 
 **Authors:** Revan Ferdinand, Alfred Dexter, Benedictus Jason, Alvina Aulia
 
