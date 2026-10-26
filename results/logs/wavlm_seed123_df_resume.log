@@ -1,0 +1,92 @@
+[{"stream_name":"stderr","time":7.607760154,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.607813975,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.607819943,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.60782569,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.226602518,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.226636419,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.226641768,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.226646038,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.986409323,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/12.2 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2.5/12.2 MB\u001b[0m \u001b[31m75.2 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━\u001b[0m \u001b[32m11.4/12.2 MB\u001b[0m \u001b[31m235.9 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m12.1/12.2 MB\u001b[0m \u001b[31m239.7 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m12.2/12.2 MB\u001b[0m \u001b[31m109.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":14.667969301,"data":"\u001b[?25h\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\r\n"}
+,{"stream_name":"stdout","time":14.668002734,"data":"dask-cuda 26.2.0 requires cuda-core==0.3.*, but you have cuda-core 1.0.1 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668007834,"data":"dask-cuda 26.2.0 requires numba-cuda\u003c0.23.0,\u003e=0.22.1, but you have numba-cuda 0.30.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.66801194,"data":"distributed-ucxx-cu12 0.48.0 requires numba-cuda[cu12]\u003c0.23.0,\u003e=0.22.1, but you have numba-cuda 0.30.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668016418,"data":"cuml-cu12 26.2.0 requires numba\u003c0.62.0,\u003e=0.60.0, but you have numba 0.65.1 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668020279,"data":"cuml-cu12 26.2.0 requires numba-cuda[cu12]\u003c0.23.0,\u003e=0.22.1, but you have numba-cuda 0.30.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668024001,"data":"ucxx-cu12 0.48.0 requires numba-cuda[cu12]\u003c0.23.0,\u003e=0.22.1, but you have numba-cuda 0.30.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668029578,"data":"cudf-cu12 26.2.1 requires numba\u003c0.62.0,\u003e=0.60.0, but you have numba 0.65.1 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":14.668049638,"data":"cudf-cu12 26.2.1 requires numba-cuda[cu12]\u003c0.23.0,\u003e=0.22.2, but you have numba-cuda 0.30.2 which is incompatible.\u001b[0m\u001b[31m\r\n"}
+,{"stream_name":"stdout","time":30.693649728,"data":"\u001b[0mCompute Device: cuda\n"}
+,{"stream_name":"stdout","time":30.693701698,"data":"GPU Model: Tesla T4\n"}
+,{"stream_name":"stdout","time":30.718243223,"data":"Config Loaded. Expected Temporal Frames: 251\n"}
+,{"stream_name":"stdout","time":30.718271619,"data":"Seed: 123 | Run mode: eval | Eval tracks: ('DF',) | CPUs: 4\n"}
+,{"stream_name":"stdout","time":43.669296113,"data":"Downloading: \"https://download.pytorch.org/models/resnet18-f37072fd.pth\" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth\n"}
+,{"stream_name":"stderr","time":43.670200243,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":43.771074861,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\r 52%|█████▏    | 23.4M/44.7M [00:00\u003c00:00, 245MB/s]\n"}
+,{"stream_name":"stderr","time":43.857008783,"data":"\r 52%|█████▏    | 23.4M/44.7M [00:00\u003c00:00, 245MB/s]\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 251MB/s]\n"}
+,{"stream_name":"stderr","time":43.872005258,"data":"\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 251MB/s]\n"}
+,{"stream_name":"stderr","time":43.872028739,"data":"\n"}
+,{"stream_name":"stderr","time":43.872034698,"data":"\n"}
+,{"stream_name":"stderr","time":44.086046385,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":44.086072175,"data":"\n"}
+,{"stream_name":"stderr","time":44.086077015,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":50.981385745,"data":"Verification Successful!\n"}
+,{"stream_name":"stdout","time":50.981428722,"data":"Input Waveform Shape: torch.Size([1, 64000])\n"}
+,{"stream_name":"stdout","time":50.981436646,"data":"Input Mel Shape: torch.Size([1, 1, 80, 251])\n"}
+,{"stream_name":"stdout","time":50.98144162,"data":"Input LFCC Shape: torch.Size([1, 1, 60, 251])\n"}
+,{"stream_name":"stdout","time":50.98144609,"data":"Model Output Shape: torch.Size([1, 2]) (Raw Logits)\n"}
+,{"stream_name":"stdout","time":51.179924144,"data":"Loading ASVspoof 2019 Train...\n"}
+,{"stream_name":"stdout","time":51.624426604,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":54.448723031,"data":"Mapping 25380 metadata lines...\n"}
+,{"stream_name":"stdout","time":54.448768097,"data":"  Label distribution: {1: 22800, 0: 2580}\n"}
+,{"stream_name":"stdout","time":54.448772937,"data":"\n"}
+,{"stream_name":"stdout","time":54.448776237,"data":"Loading ASVspoof 2019 Dev (Validation)...\n"}
+,{"stream_name":"stdout","time":54.448798624,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":55.940115455,"data":"Mapping 24844 metadata lines...\n"}
+,{"stream_name":"stdout","time":55.940169799,"data":"  Label distribution: {1: 22296, 0: 2548}\n"}
+,{"stream_name":"stdout","time":55.940174548,"data":"\n"}
+,{"stream_name":"stdout","time":55.940178548,"data":"Train samples (2019): 25380\n"}
+,{"stream_name":"stdout","time":55.940182832,"data":"Val samples (2019): 24844\n"}
+,{"stream_name":"stdout","time":55.94018682,"data":"\n"}
+,{"stream_name":"stdout","time":55.940191051,"data":"All DataLoaders ready for training!\n"}
+,{"stream_name":"stdout","time":181.577421273,"data":"Loading checkpoint: /kaggle/input/notebooks/revanferdinand/wavlm-thesis-seed-123/best_wavlm_seed123.pth\n"}
+,{"stream_name":"stdout","time":193.017535388,"data":"Best checkpoint: epoch 15, Clean 2019 EER 0.4710%\n"}
+,{"stream_name":"stdout","time":193.090875112,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":193.090918361,"data":"PREPARING ASVSPOOF 2021 LA EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":193.090923243,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":193.090953834,"data":"Scanning LA audio directories (this takes ~1 second)...\n"}
+,{"stream_name":"stdout","time":194.887385409,"data":"Mapping 181566 LA metadata entries to files...\n"}
+,{"stream_name":"stdout","time":195.937203711,"data":"LA Eval Label distribution: {1: 133360, 0: 14816}\n"}
+,{"stream_name":"stdout","time":195.93727044,"data":"\n"}
+,{"stream_name":"stdout","time":195.937277646,"data":"Successfully matched 148176 LA audio files!\n"}
+,{"stream_name":"stdout","time":195.937283206,"data":"EVAL_TRACKS=('DF',): skipping LA evaluation.\n"}
+,{"stream_name":"stdout","time":196.134420757,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":196.134452949,"data":"PREPARING ASVSPOOF 2021 DF EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":196.134458369,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":196.134463242,"data":"Scanning audio directories (this takes ~2 seconds)...\n"}
+,{"stream_name":"stdout","time":200.272795989,"data":"Mapping 611829 metadata entries to files...\n"}
+,{"stream_name":"stdout","time":205.599160487,"data":"DF Eval Label distribution: {1: 519059, 0: 14869}\n"}
+,{"stream_name":"stdout","time":205.599198649,"data":"\n"}
+,{"stream_name":"stdout","time":205.599223884,"data":"Successfully matched 533928 audio files!\n"}
+,{"stream_name":"stdout","time":205.599229189,"data":"\n"}
+,{"stream_name":"stdout","time":205.599233556,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":205.599237947,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **DF** EVALUATION\n"}
+,{"stream_name":"stdout","time":205.599242691,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":212.080775748,"data":"Resuming from /kaggle/input/wavlm-seed123-df-partial/cm_scores_2021_DF_eval_original_wavlm_seed123.txt: 462496 files already scored\n"}
+,{"stream_name":"stdout","time":212.080810025,"data":"\n"}
+,{"stream_name":"stdout","time":212.080816614,"data":"Evaluating on ASVspoof 2021 DF Eval Set (71432 of 533928 samples left)...\n"}
+,{"stream_name":"stdout","time":819.942084582,"data":"Evaluated 478512 files... (10.1 min)\n"}
+,{"stream_name":"stdout","time":1362.350451631,"data":"Evaluated 494512 files... (19.2 min)\n"}
+,{"stream_name":"stdout","time":1910.21824634,"data":"Evaluated 510512 files... (28.3 min)\n"}
+,{"stream_name":"stdout","time":2439.872342924,"data":"Evaluated 526512 files... (37.1 min)\n"}
+,{"stream_name":"stdout","time":2651.541643238,"data":"DF Original scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_original_wavlm_seed123.txt\n"}
+,{"stream_name":"stdout","time":2651.541703499,"data":"DF Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_inverted_wavlm_seed123.txt\n"}
+,{"stream_name":"stderr","time":2656.734465666,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2656.734500089,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2656.900101988,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2656.900129546,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2657.539637793,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2657.864525892,"data":"[NbConvertApp] Writing 143424 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2660.246712479,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2661.36318117,"data":"[NbConvertApp] Writing 607518 bytes to __results__.html\n"}
+]

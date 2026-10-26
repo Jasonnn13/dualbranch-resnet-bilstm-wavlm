@@ -1,0 +1,13 @@
+track,model,run,eer,ci_low,ci_high
+LA,Hybrid,run1,3.1807,2.995,3.3614
+LA,Hybrid,seed42,4.124,3.9216,4.3333
+LA,Hybrid,seed123,3.5313,3.3681,3.7045
+LA,WavLM,run1,3.6242,3.4694,3.7731
+LA,WavLM,seed42,3.5354,3.376,3.685
+LA,WavLM,seed123,4.5372,4.3873,4.7049
+DF,Hybrid,run1,7.862,7.6197,8.0719
+DF,Hybrid,seed42,8.5156,8.3461,8.6556
+DF,Hybrid,seed123,6.9339,6.6649,7.1357
+DF,WavLM,run1,8.3126,8.0772,8.4926
+DF,WavLM,seed42,8.3801,8.1653,8.5412
+DF,WavLM,seed123,9.0918,8.8631,9.3147

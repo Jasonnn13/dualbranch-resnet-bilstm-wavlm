@@ -1,0 +1,95 @@
+[{"stream_name":"stderr","time":6.230090196,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.23014886,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.230155217,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.23015894,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.792709433,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.792749321,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.792756333,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.792760424,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":23.277537775,"data":"Compute Device: cuda\n"}
+,{"stream_name":"stdout","time":23.277574943,"data":"GPU Model: Tesla T4\n"}
+,{"stream_name":"stdout","time":23.299732412,"data":"Config Loaded. Expected Temporal Frames: 251\n"}
+,{"stream_name":"stdout","time":23.29976396,"data":"Seed: 42 | Run mode: eval | Eval tracks: ('DF',) | CPUs: 4\n"}
+,{"stream_name":"stdout","time":34.453028254,"data":"Downloading: \"https://download.pytorch.org/models/resnet18-f37072fd.pth\" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth\n"}
+,{"stream_name":"stderr","time":34.592742498,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":34.694463728,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\r 44%|████▍     | 19.8M/44.7M [00:00\u003c00:00, 207MB/s]\n"}
+,{"stream_name":"stderr","time":34.794221463,"data":"\r 44%|████▍     | 19.8M/44.7M [00:00\u003c00:00, 207MB/s]\r 92%|█████████▏| 41.0M/44.7M [00:00\u003c00:00, 216MB/s]\n"}
+,{"stream_name":"stderr","time":34.810658642,"data":"\r 92%|█████████▏| 41.0M/44.7M [00:00\u003c00:00, 216MB/s]\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 216MB/s]\n"}
+,{"stream_name":"stderr","time":34.894775804,"data":"\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 216MB/s]\n"}
+,{"stream_name":"stderr","time":34.894807886,"data":"\n"}
+,{"stream_name":"stderr","time":34.894811178,"data":"\n"}
+,{"stream_name":"stderr","time":35.400982345,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":35.401015087,"data":"\n"}
+,{"stream_name":"stderr","time":35.401020432,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":41.918830557,"data":"Verification Successful!\n"}
+,{"stream_name":"stdout","time":41.918872251,"data":"Input Waveform Shape: torch.Size([1, 64000])\n"}
+,{"stream_name":"stdout","time":41.91887879,"data":"Input Mel Shape: torch.Size([1, 1, 80, 251])\n"}
+,{"stream_name":"stdout","time":41.918883133,"data":"Input LFCC Shape: torch.Size([1, 1, 60, 251])\n"}
+,{"stream_name":"stdout","time":41.918887876,"data":"Model Output Shape: torch.Size([1, 2]) (Raw Logits)\n"}
+,{"stream_name":"stdout","time":42.117809656,"data":"Loading ASVspoof 2019 Train...\n"}
+,{"stream_name":"stdout","time":42.117856187,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":42.657374272,"data":"Mapping 25380 metadata lines...\n"}
+,{"stream_name":"stdout","time":42.657412171,"data":"  Label distribution: {1: 22800, 0: 2580}\n"}
+,{"stream_name":"stdout","time":42.657417937,"data":"\n"}
+,{"stream_name":"stdout","time":42.657421957,"data":"Loading ASVspoof 2019 Dev (Validation)...\n"}
+,{"stream_name":"stdout","time":42.657426091,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":43.137879695,"data":"Mapping 24844 metadata lines...\n"}
+,{"stream_name":"stdout","time":43.137959222,"data":"  Label distribution: {1: 22296, 0: 2548}\n"}
+,{"stream_name":"stdout","time":43.137965209,"data":"\n"}
+,{"stream_name":"stdout","time":43.137969838,"data":"Train samples (2019): 25380\n"}
+,{"stream_name":"stdout","time":43.137974577,"data":"Val samples (2019): 24844\n"}
+,{"stream_name":"stdout","time":43.137978314,"data":"\n"}
+,{"stream_name":"stdout","time":43.137982637,"data":"All DataLoaders ready for training!\n"}
+,{"stream_name":"stdout","time":2678.069089692,"data":"Loading checkpoint: /kaggle/input/datasets/pinpol/wavlm-seed42-v1-output/best_wavlm_seed42.pth\n"}
+,{"stream_name":"stdout","time":2687.392808078,"data":"Best checkpoint: epoch 14, Clean 2019 EER 0.2960%\n"}
+,{"stream_name":"stdout","time":2687.467192246,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":2687.467248194,"data":"PREPARING ASVSPOOF 2021 LA EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":2687.467255747,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":2687.467260721,"data":"Scanning LA audio directories (this takes ~1 second)...\n"}
+,{"stream_name":"stdout","time":2689.287036647,"data":"Mapping 181566 LA metadata entries to files...\n"}
+,{"stream_name":"stdout","time":2690.289288435,"data":"LA Eval Label distribution: {1: 133360, 0: 14816}\n"}
+,{"stream_name":"stdout","time":2690.289324592,"data":"\n"}
+,{"stream_name":"stdout","time":2690.289330961,"data":"Successfully matched 148176 LA audio files!\n"}
+,{"stream_name":"stdout","time":2690.289336572,"data":"EVAL_TRACKS=('DF',): skipping LA evaluation.\n"}
+,{"stream_name":"stdout","time":2690.48735437,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":2690.487385678,"data":"PREPARING ASVSPOOF 2021 DF EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":2690.487391732,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":2690.487396413,"data":"Scanning audio directories (this takes ~2 seconds)...\n"}
+,{"stream_name":"stdout","time":2696.142935474,"data":"Mapping 611829 metadata entries to files...\n"}
+,{"stream_name":"stdout","time":2701.588436862,"data":"DF Eval Label distribution: {1: 519059, 0: 14869}\n"}
+,{"stream_name":"stdout","time":2701.588479076,"data":"\n"}
+,{"stream_name":"stdout","time":2701.588486244,"data":"Successfully matched 533928 audio files!\n"}
+,{"stream_name":"stdout","time":2701.588491406,"data":"\n"}
+,{"stream_name":"stdout","time":2701.589925605,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":2701.58994322,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **DF** EVALUATION\n"}
+,{"stream_name":"stdout","time":2701.589948268,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":4564.403302284,"data":"Resuming from /kaggle/input/datasets/pinpol/wavlm-seed42-v1-output/cm_scores_2021_DF_eval_original_wavlm_seed42.txt: 326320 files already scored\n"}
+,{"stream_name":"stdout","time":4564.403339804,"data":"\n"}
+,{"stream_name":"stdout","time":4564.403355214,"data":"Evaluating on ASVspoof 2021 DF Eval Set (207608 of 533928 samples left)...\n"}
+,{"stream_name":"stdout","time":4729.27971837,"data":"Evaluated 342336 files... (2.7 min)\n"}
+,{"stream_name":"stdout","time":4890.570360955,"data":"Evaluated 358336 files... (5.4 min)\n"}
+,{"stream_name":"stdout","time":5052.347075916,"data":"Evaluated 374336 files... (8.1 min)\n"}
+,{"stream_name":"stdout","time":5213.680997614,"data":"Evaluated 390336 files... (10.8 min)\n"}
+,{"stream_name":"stdout","time":5374.968043847,"data":"Evaluated 406336 files... (13.5 min)\n"}
+,{"stream_name":"stdout","time":5536.837139743,"data":"Evaluated 422336 files... (16.2 min)\n"}
+,{"stream_name":"stdout","time":5698.336941679,"data":"Evaluated 438336 files... (18.9 min)\n"}
+,{"stream_name":"stdout","time":5859.955255985,"data":"Evaluated 454336 files... (21.6 min)\n"}
+,{"stream_name":"stdout","time":6021.984185591,"data":"Evaluated 470336 files... (24.3 min)\n"}
+,{"stream_name":"stdout","time":6182.769351465,"data":"Evaluated 486336 files... (27.0 min)\n"}
+,{"stream_name":"stdout","time":6344.316808805,"data":"Evaluated 502336 files... (29.7 min)\n"}
+,{"stream_name":"stdout","time":6505.842695616,"data":"Evaluated 518336 files... (32.4 min)\n"}
+,{"stream_name":"stdout","time":6663.652876238,"data":"DF Original scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_original_wavlm_seed42.txt\n"}
+,{"stream_name":"stdout","time":6663.652940675,"data":"DF Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_inverted_wavlm_seed42.txt\n"}
+,{"stream_name":"stderr","time":6668.759551575,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6668.759592766,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6668.910704544,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6668.910737954,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6669.477808439,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":6669.477867908,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":6669.510823699,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":6669.831518302,"data":"[NbConvertApp] Writing 142130 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":6672.147879212,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":6672.147959215,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":6672.16910844,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6673.246144849,"data":"[NbConvertApp] Writing 606327 bytes to __results__.html\n"}
+]

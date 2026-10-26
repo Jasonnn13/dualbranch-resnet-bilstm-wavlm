@@ -1,0 +1,982 @@
+[{"stream_name":"stderr","time":7.519090471,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.519135163,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.519145889,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.5191489,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.177676488,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.177709083,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.177714034,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.177721982,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":32.328511172,"data":"Compute Device: cuda\n"}
+,{"stream_name":"stdout","time":32.328556865,"data":"GPU Model: Tesla T4\n"}
+,{"stream_name":"stdout","time":32.351913462,"data":"Config Loaded. Expected Temporal Frames: 251\n"}
+,{"stream_name":"stdout","time":32.351944787,"data":"Seed: 123 | Run mode: train\n"}
+,{"stream_name":"stdout","time":44.702777744,"data":"Downloading: \"https://download.pytorch.org/models/resnet18-f37072fd.pth\" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth\n"}
+,{"stream_name":"stderr","time":44.70372401,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":44.804289512,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\r 51%|█████     | 22.9M/44.7M [00:00\u003c00:00, 239MB/s]\n"}
+,{"stream_name":"stderr","time":44.917983257,"data":"\r 51%|█████     | 22.9M/44.7M [00:00\u003c00:00, 239MB/s]\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 219MB/s]\n"}
+,{"stream_name":"stderr","time":45.004887019,"data":"\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 219MB/s]\n"}
+,{"stream_name":"stderr","time":45.004928219,"data":"\n"}
+,{"stream_name":"stderr","time":45.004932654,"data":"\n"}
+,{"stream_name":"stderr","time":45.091880214,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":45.091922399,"data":"\n"}
+,{"stream_name":"stderr","time":45.091929395,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":49.405859226,"data":"Verification Successful!\n"}
+,{"stream_name":"stdout","time":49.405890894,"data":"Input Waveform Shape: torch.Size([1, 64000])\n"}
+,{"stream_name":"stdout","time":49.405896079,"data":"Input Mel Shape: torch.Size([1, 1, 80, 251])\n"}
+,{"stream_name":"stdout","time":49.405906708,"data":"Input LFCC Shape: torch.Size([1, 1, 60, 251])\n"}
+,{"stream_name":"stdout","time":49.405910202,"data":"Model Output Shape: torch.Size([1, 2]) (Raw Logits)\n"}
+,{"stream_name":"stdout","time":49.604334495,"data":"Loading ASVspoof 2019 Train...\n"}
+,{"stream_name":"stdout","time":49.989475046,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":51.874664939,"data":"Mapping 25380 metadata lines...\n"}
+,{"stream_name":"stdout","time":51.874710719,"data":"  Label distribution: {1: 22800, 0: 2580}\n"}
+,{"stream_name":"stdout","time":51.874728617,"data":"\n"}
+,{"stream_name":"stdout","time":51.874750293,"data":"Loading ASVspoof 2019 Dev (Validation)...\n"}
+,{"stream_name":"stdout","time":51.874754625,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":53.435056951,"data":"Mapping 24844 metadata lines...\n"}
+,{"stream_name":"stdout","time":53.435089345,"data":"  Label distribution: {1: 22296, 0: 2548}\n"}
+,{"stream_name":"stdout","time":53.435094439,"data":"\n"}
+,{"stream_name":"stdout","time":53.435098186,"data":"Train samples (2019): 25380\n"}
+,{"stream_name":"stdout","time":53.435101994,"data":"Val samples (2019): 24844\n"}
+,{"stream_name":"stdout","time":53.435105728,"data":"\n"}
+,{"stream_name":"stdout","time":53.435109453,"data":"All DataLoaders ready for training!\n"}
+,{"stream_name":"stdout","time":54.43974255,"data":"Distributed training to 2 GPUs!\n"}
+,{"stream_name":"stdout","time":54.439773427,"data":"Starting Training Loop from scratch...\n"}
+,{"stream_name":"stdout","time":54.439778236,"data":"\n"}
+,{"stream_name":"stdout","time":54.439782313,"data":"--- PHASE 1: Feature Extraction (Backbones Frozen) ---\n"}
+,{"stream_name":"stdout","time":54.43978652,"data":"Model Backbones are now: FROZEN (Locked)\n"}
+,{"stream_name":"stdout","time":60.533433798,"data":"Batch [0/1587] DF Loss: 4.1958 | CH Loss: 0.6920\n"}
+,{"stream_name":"stdout","time":79.405116618,"data":"Batch [50/1587] DF Loss: 3.8241 | CH Loss: 0.6753\n"}
+,{"stream_name":"stdout","time":98.986135353,"data":"Batch [100/1587] DF Loss: 4.1063 | CH Loss: 0.6071\n"}
+,{"stream_name":"stdout","time":118.286371379,"data":"Batch [150/1587] DF Loss: 1.9545 | CH Loss: 0.6053\n"}
+,{"stream_name":"stdout","time":137.755763228,"data":"Batch [200/1587] DF Loss: 1.2974 | CH Loss: 0.4937\n"}
+,{"stream_name":"stdout","time":158.16371153,"data":"Batch [250/1587] DF Loss: 1.0925 | CH Loss: 0.5663\n"}
+,{"stream_name":"stdout","time":178.251932184,"data":"Batch [300/1587] DF Loss: 3.8589 | CH Loss: 0.4003\n"}
+,{"stream_name":"stdout","time":197.032503152,"data":"Batch [350/1587] DF Loss: 1.5911 | CH Loss: 0.4445\n"}
+,{"stream_name":"stdout","time":215.841130349,"data":"Batch [400/1587] DF Loss: 0.7072 | CH Loss: 0.4044\n"}
+,{"stream_name":"stdout","time":234.587167577,"data":"Batch [450/1587] DF Loss: 0.5887 | CH Loss: 0.4240\n"}
+,{"stream_name":"stdout","time":253.502136396,"data":"Batch [500/1587] DF Loss: 2.6773 | CH Loss: 0.2376\n"}
+,{"stream_name":"stdout","time":272.046935577,"data":"Batch [550/1587] DF Loss: 2.3652 | CH Loss: 0.3229\n"}
+,{"stream_name":"stdout","time":290.784471187,"data":"Batch [600/1587] DF Loss: 0.5811 | CH Loss: 0.3131\n"}
+,{"stream_name":"stdout","time":310.434278017,"data":"Batch [650/1587] DF Loss: 0.6852 | CH Loss: 0.3563\n"}
+,{"stream_name":"stdout","time":329.25730743,"data":"Batch [700/1587] DF Loss: 1.8379 | CH Loss: 0.3046\n"}
+,{"stream_name":"stdout","time":347.639751331,"data":"Batch [750/1587] DF Loss: 0.2354 | CH Loss: 0.4253\n"}
+,{"stream_name":"stdout","time":366.409108494,"data":"Batch [800/1587] DF Loss: 0.2549 | CH Loss: 0.5468\n"}
+,{"stream_name":"stdout","time":385.093211719,"data":"Batch [850/1587] DF Loss: 0.2816 | CH Loss: 0.7141\n"}
+,{"stream_name":"stdout","time":403.956704111,"data":"Batch [900/1587] DF Loss: 0.6408 | CH Loss: 0.9624\n"}
+,{"stream_name":"stdout","time":422.124202161,"data":"Batch [950/1587] DF Loss: 0.2372 | CH Loss: 0.9100\n"}
+,{"stream_name":"stdout","time":440.525628287,"data":"Batch [1000/1587] DF Loss: 0.0616 | CH Loss: 0.7713\n"}
+,{"stream_name":"stdout","time":458.937145745,"data":"Batch [1050/1587] DF Loss: 0.5975 | CH Loss: 0.7524\n"}
+,{"stream_name":"stdout","time":477.642167653,"data":"Batch [1100/1587] DF Loss: 0.0931 | CH Loss: 0.7089\n"}
+,{"stream_name":"stdout","time":496.101842666,"data":"Batch [1150/1587] DF Loss: 0.0768 | CH Loss: 0.7054\n"}
+,{"stream_name":"stdout","time":514.385665431,"data":"Batch [1200/1587] DF Loss: 0.0244 | CH Loss: 0.7964\n"}
+,{"stream_name":"stdout","time":532.395856995,"data":"Batch [1250/1587] DF Loss: 1.8896 | CH Loss: 0.8691\n"}
+,{"stream_name":"stdout","time":550.838467029,"data":"Batch [1300/1587] DF Loss: 0.7509 | CH Loss: 3.2863\n"}
+,{"stream_name":"stdout","time":568.84464701,"data":"Batch [1350/1587] DF Loss: 0.0051 | CH Loss: 1.7682\n"}
+,{"stream_name":"stdout","time":587.254681569,"data":"Batch [1400/1587] DF Loss: 0.3527 | CH Loss: 0.6516\n"}
+,{"stream_name":"stdout","time":605.337350314,"data":"Batch [1450/1587] DF Loss: 0.0159 | CH Loss: 0.6581\n"}
+,{"stream_name":"stdout","time":623.829339408,"data":"Batch [1500/1587] DF Loss: 1.6636 | CH Loss: 0.8028\n"}
+,{"stream_name":"stdout","time":641.997337996,"data":"Batch [1550/1587] DF Loss: 0.0010 | CH Loss: 1.1645\n"}
+,{"stream_name":"stdout","time":654.652548169,"data":"\n"}
+,{"stream_name":"stdout","time":654.652611595,"data":"Epoch [1/30] Total Train Loss: 1.9422 | LR: 1.00e-04 | Time: 10.0 min\n"}
+,{"stream_name":"stdout","time":655.09945984,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":655.099499225,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":657.105234334,"data":"Batch [0/1587] DF Loss: 0.4170 | CH Loss: 0.9197\n"}
+,{"stream_name":"stdout","time":676.782850434,"data":"Batch [50/1587] DF Loss: 0.1266 | CH Loss: 0.6841\n"}
+,{"stream_name":"stdout","time":695.861717471,"data":"Batch [100/1587] DF Loss: 2.8932 | CH Loss: 0.6967\n"}
+,{"stream_name":"stdout","time":714.965384149,"data":"Batch [150/1587] DF Loss: 0.0006 | CH Loss: 0.8363\n"}
+,{"stream_name":"stdout","time":734.000586079,"data":"Batch [200/1587] DF Loss: 0.0759 | CH Loss: 0.6676\n"}
+,{"stream_name":"stdout","time":752.850649628,"data":"Batch [250/1587] DF Loss: 0.0261 | CH Loss: 0.6765\n"}
+,{"stream_name":"stdout","time":772.122070394,"data":"Batch [300/1587] DF Loss: 0.1849 | CH Loss: 0.7417\n"}
+,{"stream_name":"stdout","time":791.057520728,"data":"Batch [350/1587] DF Loss: 0.2706 | CH Loss: 0.7145\n"}
+,{"stream_name":"stdout","time":810.060340901,"data":"Batch [400/1587] DF Loss: 2.0201 | CH Loss: 0.7198\n"}
+,{"stream_name":"stdout","time":829.156935015,"data":"Batch [450/1587] DF Loss: 0.0017 | CH Loss: 0.7037\n"}
+,{"stream_name":"stdout","time":848.080429912,"data":"Batch [500/1587] DF Loss: 0.3937 | CH Loss: 0.7027\n"}
+,{"stream_name":"stdout","time":867.176609892,"data":"Batch [550/1587] DF Loss: 0.0043 | CH Loss: 0.7235\n"}
+,{"stream_name":"stdout","time":886.136745134,"data":"Batch [600/1587] DF Loss: 0.0030 | CH Loss: 0.7072\n"}
+,{"stream_name":"stdout","time":905.153055975,"data":"Batch [650/1587] DF Loss: 0.0005 | CH Loss: 0.7307\n"}
+,{"stream_name":"stdout","time":923.74663579,"data":"Batch [700/1587] DF Loss: 0.0004 | CH Loss: 0.6843\n"}
+,{"stream_name":"stdout","time":942.655272546,"data":"Batch [750/1587] DF Loss: 1.1822 | CH Loss: 0.6884\n"}
+,{"stream_name":"stdout","time":961.872426462,"data":"Batch [800/1587] DF Loss: 0.5573 | CH Loss: 0.7228\n"}
+,{"stream_name":"stdout","time":980.563457881,"data":"Batch [850/1587] DF Loss: 0.5134 | CH Loss: 0.7505\n"}
+,{"stream_name":"stdout","time":999.366280973,"data":"Batch [900/1587] DF Loss: 3.9987 | CH Loss: 0.6990\n"}
+,{"stream_name":"stdout","time":1018.611397251,"data":"Batch [950/1587] DF Loss: 0.0026 | CH Loss: 0.7248\n"}
+,{"stream_name":"stdout","time":1037.635342281,"data":"Batch [1000/1587] DF Loss: 0.0001 | CH Loss: 0.6892\n"}
+,{"stream_name":"stdout","time":1056.664476514,"data":"Batch [1050/1587] DF Loss: 0.0011 | CH Loss: 0.7028\n"}
+,{"stream_name":"stdout","time":1075.53787914,"data":"Batch [1100/1587] DF Loss: 0.0006 | CH Loss: 0.6730\n"}
+,{"stream_name":"stdout","time":1094.487136811,"data":"Batch [1150/1587] DF Loss: 0.0004 | CH Loss: 0.7036\n"}
+,{"stream_name":"stdout","time":1113.243090206,"data":"Batch [1200/1587] DF Loss: 0.0004 | CH Loss: 0.7145\n"}
+,{"stream_name":"stdout","time":1132.187379179,"data":"Batch [1250/1587] DF Loss: 0.0014 | CH Loss: 0.7178\n"}
+,{"stream_name":"stdout","time":1151.335089726,"data":"Batch [1300/1587] DF Loss: 0.5366 | CH Loss: 0.7178\n"}
+,{"stream_name":"stdout","time":1170.230462334,"data":"Batch [1350/1587] DF Loss: 0.0007 | CH Loss: 0.6903\n"}
+,{"stream_name":"stdout","time":1188.881669037,"data":"Batch [1400/1587] DF Loss: 0.0017 | CH Loss: 0.6990\n"}
+,{"stream_name":"stdout","time":1207.887872868,"data":"Batch [1450/1587] DF Loss: 0.0006 | CH Loss: 0.6839\n"}
+,{"stream_name":"stdout","time":1226.692343353,"data":"Batch [1500/1587] DF Loss: 0.0017 | CH Loss: 0.7007\n"}
+,{"stream_name":"stdout","time":1246.027475052,"data":"Batch [1550/1587] DF Loss: 0.7325 | CH Loss: 0.7152\n"}
+,{"stream_name":"stdout","time":1258.989157679,"data":"\n"}
+,{"stream_name":"stdout","time":1258.989190085,"data":"Epoch [2/30] Total Train Loss: 1.1860 | LR: 1.00e-04 | Time: 10.1 min\n"}
+,{"stream_name":"stdout","time":1258.98919618,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":1761.82825836,"data":"Clean 2019 Val Loss: 0.1257 | Val Accuracy: 99.04% | Val EER: 0.9643%\n"}
+,{"stream_name":"stdout","time":1762.265009332,"data":"New best model saved with Clean 2019 EER: 0.9643%\n"}
+,{"stream_name":"stdout","time":1762.265038904,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":1764.237357346,"data":"Batch [0/1587] DF Loss: 0.0003 | CH Loss: 0.6976\n"}
+,{"stream_name":"stdout","time":1783.149048604,"data":"Batch [50/1587] DF Loss: 6.1144 | CH Loss: 0.6951\n"}
+,{"stream_name":"stdout","time":1802.365402039,"data":"Batch [100/1587] DF Loss: 0.0008 | CH Loss: 0.6856\n"}
+,{"stream_name":"stdout","time":1821.229680583,"data":"Batch [150/1587] DF Loss: 0.0010 | CH Loss: 0.6952\n"}
+,{"stream_name":"stdout","time":1840.037627335,"data":"Batch [200/1587] DF Loss: 2.1834 | CH Loss: 0.7072\n"}
+,{"stream_name":"stdout","time":1858.903489798,"data":"Batch [250/1587] DF Loss: 0.0001 | CH Loss: 0.7192\n"}
+,{"stream_name":"stdout","time":1877.923005648,"data":"Batch [300/1587] DF Loss: 1.8794 | CH Loss: 0.6883\n"}
+,{"stream_name":"stdout","time":1896.719078337,"data":"Batch [350/1587] DF Loss: 0.0011 | CH Loss: 0.6984\n"}
+,{"stream_name":"stdout","time":1915.525645932,"data":"Batch [400/1587] DF Loss: 0.0001 | CH Loss: 0.6893\n"}
+,{"stream_name":"stdout","time":1934.422749508,"data":"Batch [450/1587] DF Loss: 3.1531 | CH Loss: 0.7110\n"}
+,{"stream_name":"stdout","time":1953.297094209,"data":"Batch [500/1587] DF Loss: 0.0003 | CH Loss: 0.7257\n"}
+,{"stream_name":"stdout","time":1972.074751792,"data":"Batch [550/1587] DF Loss: 0.0578 | CH Loss: 0.7016\n"}
+,{"stream_name":"stdout","time":1991.204625489,"data":"Batch [600/1587] DF Loss: 2.4451 | CH Loss: 0.6739\n"}
+,{"stream_name":"stdout","time":2010.049591024,"data":"Batch [650/1587] DF Loss: 0.0002 | CH Loss: 0.7049\n"}
+,{"stream_name":"stdout","time":2029.282760472,"data":"Batch [700/1587] DF Loss: 0.0000 | CH Loss: 0.6672\n"}
+,{"stream_name":"stdout","time":2048.105105362,"data":"Batch [750/1587] DF Loss: 0.0005 | CH Loss: 0.6987\n"}
+,{"stream_name":"stdout","time":2067.042364905,"data":"Batch [800/1587] DF Loss: 0.0002 | CH Loss: 0.7022\n"}
+,{"stream_name":"stdout","time":2086.372393529,"data":"Batch [850/1587] DF Loss: 0.0026 | CH Loss: 0.6939\n"}
+,{"stream_name":"stdout","time":2105.330393801,"data":"Batch [900/1587] DF Loss: 0.0005 | CH Loss: 0.6952\n"}
+,{"stream_name":"stdout","time":2124.35575788,"data":"Batch [950/1587] DF Loss: 0.0011 | CH Loss: 0.7652\n"}
+,{"stream_name":"stdout","time":2143.453721409,"data":"Batch [1000/1587] DF Loss: 0.0189 | CH Loss: 0.6798\n"}
+,{"stream_name":"stdout","time":2162.479819241,"data":"Batch [1050/1587] DF Loss: 0.0006 | CH Loss: 0.7463\n"}
+,{"stream_name":"stdout","time":2181.54264779,"data":"Batch [1100/1587] DF Loss: 1.4676 | CH Loss: 0.7002\n"}
+,{"stream_name":"stdout","time":2200.630131066,"data":"Batch [1150/1587] DF Loss: 0.0002 | CH Loss: 0.6628\n"}
+,{"stream_name":"stdout","time":2219.674144262,"data":"Batch [1200/1587] DF Loss: 0.0175 | CH Loss: 0.6658\n"}
+,{"stream_name":"stdout","time":2238.676549978,"data":"Batch [1250/1587] DF Loss: 1.5856 | CH Loss: 0.7375\n"}
+,{"stream_name":"stdout","time":2257.586680242,"data":"Batch [1300/1587] DF Loss: 0.0025 | CH Loss: 0.6922\n"}
+,{"stream_name":"stdout","time":2276.687318515,"data":"Batch [1350/1587] DF Loss: 0.0002 | CH Loss: 0.7474\n"}
+,{"stream_name":"stdout","time":2295.66299324,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.6847\n"}
+,{"stream_name":"stdout","time":2314.544201718,"data":"Batch [1450/1587] DF Loss: 0.0003 | CH Loss: 0.7139\n"}
+,{"stream_name":"stdout","time":2333.862610232,"data":"Batch [1500/1587] DF Loss: 0.0001 | CH Loss: 0.6600\n"}
+,{"stream_name":"stdout","time":2352.700784784,"data":"Batch [1550/1587] DF Loss: 0.0168 | CH Loss: 0.7490\n"}
+,{"stream_name":"stdout","time":2366.204028759,"data":"\n"}
+,{"stream_name":"stdout","time":2366.204087125,"data":"Epoch [3/30] Total Train Loss: 1.1480 | LR: 1.00e-04 | Time: 10.1 min\n"}
+,{"stream_name":"stdout","time":2366.583357748,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":2366.583388001,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2368.607070568,"data":"Batch [0/1587] DF Loss: 1.6238 | CH Loss: 0.7175\n"}
+,{"stream_name":"stdout","time":2387.798153534,"data":"Batch [50/1587] DF Loss: 0.0003 | CH Loss: 0.6726\n"}
+,{"stream_name":"stdout","time":2407.221035614,"data":"Batch [100/1587] DF Loss: 0.0001 | CH Loss: 0.6745\n"}
+,{"stream_name":"stdout","time":2426.265096101,"data":"Batch [150/1587] DF Loss: 0.0002 | CH Loss: 0.7037\n"}
+,{"stream_name":"stdout","time":2445.461044999,"data":"Batch [200/1587] DF Loss: 0.0002 | CH Loss: 0.6929\n"}
+,{"stream_name":"stdout","time":2464.44473383,"data":"Batch [250/1587] DF Loss: 0.1379 | CH Loss: 0.6872\n"}
+,{"stream_name":"stdout","time":2483.426714461,"data":"Batch [300/1587] DF Loss: 1.7324 | CH Loss: 0.6754\n"}
+,{"stream_name":"stdout","time":2502.404762055,"data":"Batch [350/1587] DF Loss: 0.0010 | CH Loss: 0.6896\n"}
+,{"stream_name":"stdout","time":2521.243358873,"data":"Batch [400/1587] DF Loss: 0.0001 | CH Loss: 0.7244\n"}
+,{"stream_name":"stdout","time":2539.970039177,"data":"Batch [450/1587] DF Loss: 0.0050 | CH Loss: 0.7028\n"}
+,{"stream_name":"stdout","time":2559.176892086,"data":"Batch [500/1587] DF Loss: 0.0071 | CH Loss: 0.6729\n"}
+,{"stream_name":"stdout","time":2577.978036483,"data":"Batch [550/1587] DF Loss: 0.0164 | CH Loss: 0.7319\n"}
+,{"stream_name":"stdout","time":2597.340557439,"data":"Batch [600/1587] DF Loss: 1.5911 | CH Loss: 0.7215\n"}
+,{"stream_name":"stdout","time":2616.074546413,"data":"Batch [650/1587] DF Loss: 0.3556 | CH Loss: 0.6987\n"}
+,{"stream_name":"stdout","time":2635.189706586,"data":"Batch [700/1587] DF Loss: 0.0003 | CH Loss: 0.7541\n"}
+,{"stream_name":"stdout","time":2654.183822936,"data":"Batch [750/1587] DF Loss: 0.0002 | CH Loss: 0.7436\n"}
+,{"stream_name":"stdout","time":2673.105280177,"data":"Batch [800/1587] DF Loss: 0.2365 | CH Loss: 0.7196\n"}
+,{"stream_name":"stdout","time":2692.234950504,"data":"Batch [850/1587] DF Loss: 0.0001 | CH Loss: 0.6574\n"}
+,{"stream_name":"stdout","time":2710.809664475,"data":"Batch [900/1587] DF Loss: 0.0013 | CH Loss: 0.8053\n"}
+,{"stream_name":"stdout","time":2729.777810851,"data":"Batch [950/1587] DF Loss: 0.0014 | CH Loss: 0.8782\n"}
+,{"stream_name":"stdout","time":2749.092017652,"data":"Batch [1000/1587] DF Loss: 0.0020 | CH Loss: 0.8963\n"}
+,{"stream_name":"stdout","time":2768.14598568,"data":"Batch [1050/1587] DF Loss: 0.0002 | CH Loss: 0.8866\n"}
+,{"stream_name":"stdout","time":2787.399171979,"data":"Batch [1100/1587] DF Loss: 0.0001 | CH Loss: 0.7280\n"}
+,{"stream_name":"stdout","time":2806.206146851,"data":"Batch [1150/1587] DF Loss: 0.0110 | CH Loss: 0.8592\n"}
+,{"stream_name":"stdout","time":2825.22429574,"data":"Batch [1200/1587] DF Loss: 0.0007 | CH Loss: 0.6868\n"}
+,{"stream_name":"stdout","time":2844.224235129,"data":"Batch [1250/1587] DF Loss: 0.1939 | CH Loss: 0.7032\n"}
+,{"stream_name":"stdout","time":2863.248657825,"data":"Batch [1300/1587] DF Loss: 0.0069 | CH Loss: 0.8017\n"}
+,{"stream_name":"stdout","time":2882.350557354,"data":"Batch [1350/1587] DF Loss: 1.9935 | CH Loss: 0.7740\n"}
+,{"stream_name":"stdout","time":2901.272106714,"data":"Batch [1400/1587] DF Loss: 0.8070 | CH Loss: 0.7560\n"}
+,{"stream_name":"stdout","time":2920.239901969,"data":"Batch [1450/1587] DF Loss: 1.7789 | CH Loss: 0.6757\n"}
+,{"stream_name":"stdout","time":2939.326545483,"data":"Batch [1500/1587] DF Loss: 0.2735 | CH Loss: 0.7548\n"}
+,{"stream_name":"stdout","time":2958.182269093,"data":"Batch [1550/1587] DF Loss: 0.0002 | CH Loss: 0.7330\n"}
+,{"stream_name":"stdout","time":2971.303983483,"data":"\n"}
+,{"stream_name":"stdout","time":2971.30400848,"data":"Epoch [4/30] Total Train Loss: 1.1494 | LR: 1.00e-04 | Time: 10.1 min\n"}
+,{"stream_name":"stdout","time":2971.304014071,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":3286.822490159,"data":"Clean 2019 Val Loss: 0.0314 | Val Accuracy: 99.23% | Val EER: 0.6672%\n"}
+,{"stream_name":"stdout","time":3287.194328029,"data":"New best model saved with Clean 2019 EER: 0.6672%\n"}
+,{"stream_name":"stdout","time":3287.194359906,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":3289.134367151,"data":"Batch [0/1587] DF Loss: 1.8150 | CH Loss: 0.7014\n"}
+,{"stream_name":"stdout","time":3308.369850224,"data":"Batch [50/1587] DF Loss: 0.9387 | CH Loss: 0.6969\n"}
+,{"stream_name":"stdout","time":3327.480165134,"data":"Batch [100/1587] DF Loss: 0.0001 | CH Loss: 0.7843\n"}
+,{"stream_name":"stdout","time":3346.870391409,"data":"Batch [150/1587] DF Loss: 1.7976 | CH Loss: 0.7102\n"}
+,{"stream_name":"stdout","time":3365.611143972,"data":"Batch [200/1587] DF Loss: 1.9766 | CH Loss: 0.7335\n"}
+,{"stream_name":"stdout","time":3384.604976619,"data":"Batch [250/1587] DF Loss: 1.4746 | CH Loss: 0.7479\n"}
+,{"stream_name":"stdout","time":3403.93070732,"data":"Batch [300/1587] DF Loss: 0.0007 | CH Loss: 0.7024\n"}
+,{"stream_name":"stdout","time":3422.936586306,"data":"Batch [350/1587] DF Loss: 0.0007 | CH Loss: 0.8286\n"}
+,{"stream_name":"stdout","time":3442.158227047,"data":"Batch [400/1587] DF Loss: 0.0002 | CH Loss: 0.7715\n"}
+,{"stream_name":"stdout","time":3461.129875064,"data":"Batch [450/1587] DF Loss: 0.0006 | CH Loss: 0.8533\n"}
+,{"stream_name":"stdout","time":3480.616278825,"data":"Batch [500/1587] DF Loss: 1.9651 | CH Loss: 0.6371\n"}
+,{"stream_name":"stdout","time":3499.668555022,"data":"Batch [550/1587] DF Loss: 0.0091 | CH Loss: 0.7575\n"}
+,{"stream_name":"stdout","time":3518.863149648,"data":"Batch [600/1587] DF Loss: 0.0007 | CH Loss: 0.7189\n"}
+,{"stream_name":"stdout","time":3538.222284746,"data":"Batch [650/1587] DF Loss: 0.0003 | CH Loss: 0.7552\n"}
+,{"stream_name":"stdout","time":3557.114171122,"data":"Batch [700/1587] DF Loss: 0.0045 | CH Loss: 0.6696\n"}
+,{"stream_name":"stdout","time":3576.208613048,"data":"Batch [750/1587] DF Loss: 0.0006 | CH Loss: 0.6989\n"}
+,{"stream_name":"stdout","time":3595.474673872,"data":"Batch [800/1587] DF Loss: 0.0029 | CH Loss: 0.6191\n"}
+,{"stream_name":"stdout","time":3614.484369452,"data":"Batch [850/1587] DF Loss: 0.2616 | CH Loss: 0.7876\n"}
+,{"stream_name":"stdout","time":3633.973262755,"data":"Batch [900/1587] DF Loss: 2.1405 | CH Loss: 0.7610\n"}
+,{"stream_name":"stdout","time":3653.060219345,"data":"Batch [950/1587] DF Loss: 0.0378 | CH Loss: 0.7061\n"}
+,{"stream_name":"stdout","time":3672.529433524,"data":"Batch [1000/1587] DF Loss: 0.0002 | CH Loss: 0.7512\n"}
+,{"stream_name":"stdout","time":3691.704943725,"data":"Batch [1050/1587] DF Loss: 0.0062 | CH Loss: 0.5714\n"}
+,{"stream_name":"stdout","time":3710.818887735,"data":"Batch [1100/1587] DF Loss: 0.0144 | CH Loss: 0.7439\n"}
+,{"stream_name":"stdout","time":3729.922332374,"data":"Batch [1150/1587] DF Loss: 2.2195 | CH Loss: 0.7256\n"}
+,{"stream_name":"stdout","time":3748.923842966,"data":"Batch [1200/1587] DF Loss: 0.5623 | CH Loss: 0.7024\n"}
+,{"stream_name":"stdout","time":3767.842417726,"data":"Batch [1250/1587] DF Loss: 2.0183 | CH Loss: 0.6658\n"}
+,{"stream_name":"stdout","time":3786.889887734,"data":"Batch [1300/1587] DF Loss: 0.1513 | CH Loss: 0.6806\n"}
+,{"stream_name":"stdout","time":3806.022292507,"data":"Batch [1350/1587] DF Loss: 0.0004 | CH Loss: 0.8176\n"}
+,{"stream_name":"stdout","time":3825.418723486,"data":"Batch [1400/1587] DF Loss: 0.0007 | CH Loss: 0.7327\n"}
+,{"stream_name":"stdout","time":3844.337505572,"data":"Batch [1450/1587] DF Loss: 2.7631 | CH Loss: 0.6885\n"}
+,{"stream_name":"stdout","time":3863.407356178,"data":"Batch [1500/1587] DF Loss: 0.0568 | CH Loss: 0.6649\n"}
+,{"stream_name":"stdout","time":3882.551083582,"data":"Batch [1550/1587] DF Loss: 0.0010 | CH Loss: 0.7328\n"}
+,{"stream_name":"stdout","time":3895.834009323,"data":"\n"}
+,{"stream_name":"stdout","time":3895.83404201,"data":"Epoch [5/30] Total Train Loss: 1.1390 | LR: 1.00e-04 | Time: 10.1 min\n"}
+,{"stream_name":"stdout","time":3896.229813686,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":3896.229845836,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":3896.229851503,"data":"\n"}
+,{"stream_name":"stdout","time":3896.229856209,"data":"--- PHASE 2: Fine-Tuning (Backbones Thawed) ---\n"}
+,{"stream_name":"stdout","time":3896.229861043,"data":"Model Backbones are now: UNFROZEN (Transformer Only)\n"}
+,{"stream_name":"stdout","time":3896.229865891,"data":"Head LR: 0.0001, Backbone LR: 1e-05\n"}
+,{"stream_name":"stdout","time":3898.55373805,"data":"Batch [0/1587] DF Loss: 0.0463 | CH Loss: 0.7240\n"}
+,{"stream_name":"stdout","time":3921.95745771,"data":"Batch [50/1587] DF Loss: 0.0003 | CH Loss: 0.7288\n"}
+,{"stream_name":"stdout","time":3945.492327609,"data":"Batch [100/1587] DF Loss: 0.0014 | CH Loss: 0.8092\n"}
+,{"stream_name":"stdout","time":3968.627510277,"data":"Batch [150/1587] DF Loss: 0.0108 | CH Loss: 0.7331\n"}
+,{"stream_name":"stdout","time":3992.047211162,"data":"Batch [200/1587] DF Loss: 0.0008 | CH Loss: 0.7623\n"}
+,{"stream_name":"stdout","time":4015.146259432,"data":"Batch [250/1587] DF Loss: 0.0038 | CH Loss: 0.7274\n"}
+,{"stream_name":"stdout","time":4038.089129363,"data":"Batch [300/1587] DF Loss: 3.1560 | CH Loss: 0.6955\n"}
+,{"stream_name":"stdout","time":4061.180218886,"data":"Batch [350/1587] DF Loss: 0.0001 | CH Loss: 0.7779\n"}
+,{"stream_name":"stdout","time":4084.28505108,"data":"Batch [400/1587] DF Loss: 0.0019 | CH Loss: 0.7269\n"}
+,{"stream_name":"stdout","time":4107.598078565,"data":"Batch [450/1587] DF Loss: 0.0002 | CH Loss: 0.7516\n"}
+,{"stream_name":"stdout","time":4130.679075291,"data":"Batch [500/1587] DF Loss: 3.4184 | CH Loss: 0.7897\n"}
+,{"stream_name":"stdout","time":4153.686821834,"data":"Batch [550/1587] DF Loss: 0.0002 | CH Loss: 0.7083\n"}
+,{"stream_name":"stdout","time":4176.870715754,"data":"Batch [600/1587] DF Loss: 0.0016 | CH Loss: 0.6519\n"}
+,{"stream_name":"stdout","time":4199.825488036,"data":"Batch [650/1587] DF Loss: 0.0003 | CH Loss: 0.7077\n"}
+,{"stream_name":"stdout","time":4223.350779634,"data":"Batch [700/1587] DF Loss: 0.0228 | CH Loss: 0.6760\n"}
+,{"stream_name":"stdout","time":4246.716912124,"data":"Batch [750/1587] DF Loss: 0.0057 | CH Loss: 0.7474\n"}
+,{"stream_name":"stdout","time":4270.234197968,"data":"Batch [800/1587] DF Loss: 0.0006 | CH Loss: 0.6922\n"}
+,{"stream_name":"stdout","time":4293.46731211,"data":"Batch [850/1587] DF Loss: 0.0001 | CH Loss: 0.7058\n"}
+,{"stream_name":"stdout","time":4316.693821032,"data":"Batch [900/1587] DF Loss: 2.2589 | CH Loss: 0.6932\n"}
+,{"stream_name":"stdout","time":4340.161189109,"data":"Batch [950/1587] DF Loss: 0.0001 | CH Loss: 0.6492\n"}
+,{"stream_name":"stdout","time":4363.497766865,"data":"Batch [1000/1587] DF Loss: 0.0007 | CH Loss: 0.7220\n"}
+,{"stream_name":"stdout","time":4387.087120417,"data":"Batch [1050/1587] DF Loss: 0.4702 | CH Loss: 0.6620\n"}
+,{"stream_name":"stdout","time":4410.186572706,"data":"Batch [1100/1587] DF Loss: 0.0044 | CH Loss: 0.6702\n"}
+,{"stream_name":"stdout","time":4433.717719325,"data":"Batch [1150/1587] DF Loss: 0.0035 | CH Loss: 0.6881\n"}
+,{"stream_name":"stdout","time":4457.082116649,"data":"Batch [1200/1587] DF Loss: 0.0037 | CH Loss: 0.6856\n"}
+,{"stream_name":"stdout","time":4480.108466359,"data":"Batch [1250/1587] DF Loss: 0.0009 | CH Loss: 0.6864\n"}
+,{"stream_name":"stdout","time":4503.473390535,"data":"Batch [1300/1587] DF Loss: 0.0003 | CH Loss: 0.7648\n"}
+,{"stream_name":"stdout","time":4526.814992594,"data":"Batch [1350/1587] DF Loss: 0.0004 | CH Loss: 0.6944\n"}
+,{"stream_name":"stdout","time":4550.285770801,"data":"Batch [1400/1587] DF Loss: 3.2768 | CH Loss: 0.6853\n"}
+,{"stream_name":"stdout","time":4573.604397731,"data":"Batch [1450/1587] DF Loss: 0.0001 | CH Loss: 0.7392\n"}
+,{"stream_name":"stdout","time":4596.804753817,"data":"Batch [1500/1587] DF Loss: 0.0007 | CH Loss: 0.7338\n"}
+,{"stream_name":"stdout","time":4620.178625586,"data":"Batch [1550/1587] DF Loss: 0.0074 | CH Loss: 0.8006\n"}
+,{"stream_name":"stdout","time":4636.187361336,"data":"\n"}
+,{"stream_name":"stdout","time":4636.187391438,"data":"Epoch [6/30] Total Train Loss: 1.0485 | LR: 1.86e-05 | Time: 12.3 min\n"}
+,{"stream_name":"stdout","time":4636.187397087,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":4956.721807262,"data":"Clean 2019 Val Loss: 0.0304 | Val Accuracy: 99.45% | Val EER: 0.5495%\n"}
+,{"stream_name":"stdout","time":4958.433126292,"data":"New best model saved with Clean 2019 EER: 0.5495%\n"}
+,{"stream_name":"stdout","time":4958.43315911,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":4960.575719358,"data":"Batch [0/1587] DF Loss: 0.0155 | CH Loss: 0.7663\n"}
+,{"stream_name":"stdout","time":4983.897392904,"data":"Batch [50/1587] DF Loss: 0.0003 | CH Loss: 0.7151\n"}
+,{"stream_name":"stdout","time":5006.978261204,"data":"Batch [100/1587] DF Loss: 0.0036 | CH Loss: 0.7240\n"}
+,{"stream_name":"stdout","time":5030.515032893,"data":"Batch [150/1587] DF Loss: 0.0002 | CH Loss: 0.6716\n"}
+,{"stream_name":"stdout","time":5053.757082119,"data":"Batch [200/1587] DF Loss: 0.0003 | CH Loss: 0.6767\n"}
+,{"stream_name":"stdout","time":5076.93560347,"data":"Batch [250/1587] DF Loss: 0.0004 | CH Loss: 0.7670\n"}
+,{"stream_name":"stdout","time":5100.102697205,"data":"Batch [300/1587] DF Loss: 0.0009 | CH Loss: 0.7416\n"}
+,{"stream_name":"stdout","time":5123.382452134,"data":"Batch [350/1587] DF Loss: 0.0860 | CH Loss: 0.6877\n"}
+,{"stream_name":"stdout","time":5146.534765154,"data":"Batch [400/1587] DF Loss: 1.9568 | CH Loss: 0.6408\n"}
+,{"stream_name":"stdout","time":5169.608398071,"data":"Batch [450/1587] DF Loss: 0.0896 | CH Loss: 0.7909\n"}
+,{"stream_name":"stdout","time":5192.874719773,"data":"Batch [500/1587] DF Loss: 0.0492 | CH Loss: 0.7059\n"}
+,{"stream_name":"stdout","time":5215.82523756,"data":"Batch [550/1587] DF Loss: 0.0002 | CH Loss: 0.7631\n"}
+,{"stream_name":"stdout","time":5239.154140567,"data":"Batch [600/1587] DF Loss: 0.0017 | CH Loss: 0.6861\n"}
+,{"stream_name":"stdout","time":5262.389382912,"data":"Batch [650/1587] DF Loss: 0.0011 | CH Loss: 0.7812\n"}
+,{"stream_name":"stdout","time":5285.473583041,"data":"Batch [700/1587] DF Loss: 0.0025 | CH Loss: 0.6894\n"}
+,{"stream_name":"stdout","time":5308.508355949,"data":"Batch [750/1587] DF Loss: 0.0006 | CH Loss: 0.6944\n"}
+,{"stream_name":"stdout","time":5331.795700973,"data":"Batch [800/1587] DF Loss: 0.0002 | CH Loss: 0.7816\n"}
+,{"stream_name":"stdout","time":5354.821005716,"data":"Batch [850/1587] DF Loss: 0.0003 | CH Loss: 0.6835\n"}
+,{"stream_name":"stdout","time":5377.893936905,"data":"Batch [900/1587] DF Loss: 0.0001 | CH Loss: 0.6683\n"}
+,{"stream_name":"stdout","time":5401.178109672,"data":"Batch [950/1587] DF Loss: 0.0045 | CH Loss: 0.7276\n"}
+,{"stream_name":"stdout","time":5424.264073783,"data":"Batch [1000/1587] DF Loss: 2.1359 | CH Loss: 0.7473\n"}
+,{"stream_name":"stdout","time":5447.469463375,"data":"Batch [1050/1587] DF Loss: 2.0340 | CH Loss: 0.7296\n"}
+,{"stream_name":"stdout","time":5470.42226356,"data":"Batch [1100/1587] DF Loss: 1.6703 | CH Loss: 0.6482\n"}
+,{"stream_name":"stdout","time":5493.782425739,"data":"Batch [1150/1587] DF Loss: 0.0707 | CH Loss: 0.7330\n"}
+,{"stream_name":"stdout","time":5516.767697182,"data":"Batch [1200/1587] DF Loss: 0.0005 | CH Loss: 0.7373\n"}
+,{"stream_name":"stdout","time":5539.940009466,"data":"Batch [1250/1587] DF Loss: 0.0006 | CH Loss: 0.8163\n"}
+,{"stream_name":"stdout","time":5563.108904198,"data":"Batch [1300/1587] DF Loss: 1.5997 | CH Loss: 0.7686\n"}
+,{"stream_name":"stdout","time":5586.110889154,"data":"Batch [1350/1587] DF Loss: 0.0001 | CH Loss: 0.7532\n"}
+,{"stream_name":"stdout","time":5609.2460767,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.7217\n"}
+,{"stream_name":"stdout","time":5632.391479624,"data":"Batch [1450/1587] DF Loss: 0.0003 | CH Loss: 0.6971\n"}
+,{"stream_name":"stdout","time":5655.615796822,"data":"Batch [1500/1587] DF Loss: 3.1540 | CH Loss: 0.6871\n"}
+,{"stream_name":"stdout","time":5678.565719416,"data":"Batch [1550/1587] DF Loss: 0.0003 | CH Loss: 0.7214\n"}
+,{"stream_name":"stdout","time":5694.727584401,"data":"\n"}
+,{"stream_name":"stdout","time":5694.727617068,"data":"Epoch [7/30] Total Train Loss: 1.0439 | LR: 4.11e-05 | Time: 12.3 min\n"}
+,{"stream_name":"stdout","time":5696.565684503,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":5696.565722662,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":5698.747193811,"data":"Batch [0/1587] DF Loss: 0.0005 | CH Loss: 0.8043\n"}
+,{"stream_name":"stdout","time":5722.024945472,"data":"Batch [50/1587] DF Loss: 0.0002 | CH Loss: 0.7150\n"}
+,{"stream_name":"stdout","time":5745.110397434,"data":"Batch [100/1587] DF Loss: 0.9329 | CH Loss: 0.7314\n"}
+,{"stream_name":"stdout","time":5768.438637497,"data":"Batch [150/1587] DF Loss: 0.0266 | CH Loss: 0.7156\n"}
+,{"stream_name":"stdout","time":5791.661385551,"data":"Batch [200/1587] DF Loss: 0.0002 | CH Loss: 0.7899\n"}
+,{"stream_name":"stdout","time":5814.939891198,"data":"Batch [250/1587] DF Loss: 0.0002 | CH Loss: 0.7186\n"}
+,{"stream_name":"stdout","time":5838.010145942,"data":"Batch [300/1587] DF Loss: 0.7281 | CH Loss: 0.7428\n"}
+,{"stream_name":"stdout","time":5861.159081447,"data":"Batch [350/1587] DF Loss: 2.1407 | CH Loss: 0.7842\n"}
+,{"stream_name":"stdout","time":5884.716841034,"data":"Batch [400/1587] DF Loss: 1.5969 | CH Loss: 0.7314\n"}
+,{"stream_name":"stdout","time":5907.704225421,"data":"Batch [450/1587] DF Loss: 0.0005 | CH Loss: 0.6956\n"}
+,{"stream_name":"stdout","time":5930.795280406,"data":"Batch [500/1587] DF Loss: 0.0001 | CH Loss: 0.7031\n"}
+,{"stream_name":"stdout","time":5953.864729402,"data":"Batch [550/1587] DF Loss: 0.0014 | CH Loss: 0.6694\n"}
+,{"stream_name":"stdout","time":5977.094939012,"data":"Batch [600/1587] DF Loss: 0.0002 | CH Loss: 0.6921\n"}
+,{"stream_name":"stdout","time":6000.284768501,"data":"Batch [650/1587] DF Loss: 0.0017 | CH Loss: 0.6784\n"}
+,{"stream_name":"stdout","time":6023.299137611,"data":"Batch [700/1587] DF Loss: 1.8366 | CH Loss: 0.7312\n"}
+,{"stream_name":"stdout","time":6046.174958456,"data":"Batch [750/1587] DF Loss: 0.0304 | CH Loss: 0.6758\n"}
+,{"stream_name":"stdout","time":6069.02960939,"data":"Batch [800/1587] DF Loss: 0.0003 | CH Loss: 0.7072\n"}
+,{"stream_name":"stdout","time":6092.199369864,"data":"Batch [850/1587] DF Loss: 0.0003 | CH Loss: 0.6781\n"}
+,{"stream_name":"stdout","time":6115.365601379,"data":"Batch [900/1587] DF Loss: 0.0469 | CH Loss: 0.6503\n"}
+,{"stream_name":"stdout","time":6138.500293708,"data":"Batch [950/1587] DF Loss: 3.8264 | CH Loss: 0.6874\n"}
+,{"stream_name":"stdout","time":6161.544025108,"data":"Batch [1000/1587] DF Loss: 0.0004 | CH Loss: 0.7338\n"}
+,{"stream_name":"stdout","time":6184.871918855,"data":"Batch [1050/1587] DF Loss: 0.0003 | CH Loss: 0.7427\n"}
+,{"stream_name":"stdout","time":6207.855044472,"data":"Batch [1100/1587] DF Loss: 0.0019 | CH Loss: 0.7598\n"}
+,{"stream_name":"stdout","time":6231.040400403,"data":"Batch [1150/1587] DF Loss: 0.0021 | CH Loss: 0.7638\n"}
+,{"stream_name":"stdout","time":6254.129069579,"data":"Batch [1200/1587] DF Loss: 0.0021 | CH Loss: 0.6658\n"}
+,{"stream_name":"stdout","time":6277.274801771,"data":"Batch [1250/1587] DF Loss: 0.0002 | CH Loss: 0.8055\n"}
+,{"stream_name":"stdout","time":6300.163856961,"data":"Batch [1300/1587] DF Loss: 0.5979 | CH Loss: 0.6182\n"}
+,{"stream_name":"stdout","time":6323.203084341,"data":"Batch [1350/1587] DF Loss: 0.6045 | CH Loss: 0.7589\n"}
+,{"stream_name":"stdout","time":6346.128192538,"data":"Batch [1400/1587] DF Loss: 0.0266 | CH Loss: 0.6890\n"}
+,{"stream_name":"stdout","time":6369.047993235,"data":"Batch [1450/1587] DF Loss: 1.7424 | CH Loss: 0.6576\n"}
+,{"stream_name":"stdout","time":6392.419003528,"data":"Batch [1500/1587] DF Loss: 0.0002 | CH Loss: 0.6983\n"}
+,{"stream_name":"stdout","time":6415.545636392,"data":"Batch [1550/1587] DF Loss: 0.0004 | CH Loss: 0.6314\n"}
+,{"stream_name":"stdout","time":6431.499824059,"data":"\n"}
+,{"stream_name":"stdout","time":6431.499850837,"data":"Epoch [8/30] Total Train Loss: 1.0779 | LR: 6.89e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":6431.499856435,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":6746.929293948,"data":"Clean 2019 Val Loss: 0.0278 | Val Accuracy: 99.63% | Val EER: 0.3703%\n"}
+,{"stream_name":"stdout","time":6748.182208044,"data":"New best model saved with Clean 2019 EER: 0.3703%\n"}
+,{"stream_name":"stdout","time":6748.182235844,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":6750.277039396,"data":"Batch [0/1587] DF Loss: 0.0001 | CH Loss: 0.7628\n"}
+,{"stream_name":"stdout","time":6773.614790391,"data":"Batch [50/1587] DF Loss: 0.0047 | CH Loss: 0.7298\n"}
+,{"stream_name":"stdout","time":6797.040617403,"data":"Batch [100/1587] DF Loss: 0.0005 | CH Loss: 0.7082\n"}
+,{"stream_name":"stdout","time":6820.138958779,"data":"Batch [150/1587] DF Loss: 1.8589 | CH Loss: 0.6744\n"}
+,{"stream_name":"stdout","time":6843.387369489,"data":"Batch [200/1587] DF Loss: 1.8959 | CH Loss: 0.7606\n"}
+,{"stream_name":"stdout","time":6866.119298233,"data":"Batch [250/1587] DF Loss: 3.2653 | CH Loss: 0.6752\n"}
+,{"stream_name":"stdout","time":6888.944087775,"data":"Batch [300/1587] DF Loss: 0.0008 | CH Loss: 0.6418\n"}
+,{"stream_name":"stdout","time":6912.111997712,"data":"Batch [350/1587] DF Loss: 0.0128 | CH Loss: 0.7825\n"}
+,{"stream_name":"stdout","time":6934.991534976,"data":"Batch [400/1587] DF Loss: 0.0008 | CH Loss: 0.6759\n"}
+,{"stream_name":"stdout","time":6958.27489179,"data":"Batch [450/1587] DF Loss: 0.0083 | CH Loss: 0.6714\n"}
+,{"stream_name":"stdout","time":6981.421133949,"data":"Batch [500/1587] DF Loss: 0.8840 | CH Loss: 0.7431\n"}
+,{"stream_name":"stdout","time":7004.419345907,"data":"Batch [550/1587] DF Loss: 0.0001 | CH Loss: 0.6337\n"}
+,{"stream_name":"stdout","time":7027.600369968,"data":"Batch [600/1587] DF Loss: 0.0008 | CH Loss: 0.7714\n"}
+,{"stream_name":"stdout","time":7050.72472466,"data":"Batch [650/1587] DF Loss: 0.0141 | CH Loss: 0.6288\n"}
+,{"stream_name":"stdout","time":7073.693887902,"data":"Batch [700/1587] DF Loss: 0.0002 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":7096.662720791,"data":"Batch [750/1587] DF Loss: 0.0003 | CH Loss: 0.6941\n"}
+,{"stream_name":"stdout","time":7119.590601279,"data":"Batch [800/1587] DF Loss: 0.0266 | CH Loss: 0.7785\n"}
+,{"stream_name":"stdout","time":7142.766573027,"data":"Batch [850/1587] DF Loss: 0.0010 | CH Loss: 0.7562\n"}
+,{"stream_name":"stdout","time":7165.619903678,"data":"Batch [900/1587] DF Loss: 0.0006 | CH Loss: 0.7207\n"}
+,{"stream_name":"stdout","time":7188.730913028,"data":"Batch [950/1587] DF Loss: 0.0538 | CH Loss: 0.6599\n"}
+,{"stream_name":"stdout","time":7211.667393019,"data":"Batch [1000/1587] DF Loss: 0.0000 | CH Loss: 0.6850\n"}
+,{"stream_name":"stdout","time":7234.408910746,"data":"Batch [1050/1587] DF Loss: 0.0015 | CH Loss: 0.7794\n"}
+,{"stream_name":"stdout","time":7257.572476431,"data":"Batch [1100/1587] DF Loss: 0.0008 | CH Loss: 0.7807\n"}
+,{"stream_name":"stdout","time":7280.440412054,"data":"Batch [1150/1587] DF Loss: 0.0013 | CH Loss: 0.7765\n"}
+,{"stream_name":"stdout","time":7303.599896402,"data":"Batch [1200/1587] DF Loss: 0.0113 | CH Loss: 0.7218\n"}
+,{"stream_name":"stdout","time":7326.260139747,"data":"Batch [1250/1587] DF Loss: 0.0002 | CH Loss: 0.6898\n"}
+,{"stream_name":"stdout","time":7349.541289955,"data":"Batch [1300/1587] DF Loss: 0.0007 | CH Loss: 0.7409\n"}
+,{"stream_name":"stdout","time":7372.517529902,"data":"Batch [1350/1587] DF Loss: 0.0023 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":7395.602658259,"data":"Batch [1400/1587] DF Loss: 0.0001 | CH Loss: 0.7349\n"}
+,{"stream_name":"stdout","time":7418.83607902,"data":"Batch [1450/1587] DF Loss: 0.0003 | CH Loss: 0.6919\n"}
+,{"stream_name":"stdout","time":7441.819747269,"data":"Batch [1500/1587] DF Loss: 0.0001 | CH Loss: 0.7264\n"}
+,{"stream_name":"stdout","time":7465.0323515,"data":"Batch [1550/1587] DF Loss: 2.3584 | CH Loss: 0.7237\n"}
+,{"stream_name":"stdout","time":7480.919234018,"data":"\n"}
+,{"stream_name":"stdout","time":7480.919260925,"data":"Epoch [9/30] Total Train Loss: 1.0743 | LR: 9.14e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":7482.21966348,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":7482.21969172,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":7484.344085235,"data":"Batch [0/1587] DF Loss: 0.0041 | CH Loss: 0.6877\n"}
+,{"stream_name":"stdout","time":7507.594002795,"data":"Batch [50/1587] DF Loss: 0.0002 | CH Loss: 0.7459\n"}
+,{"stream_name":"stdout","time":7530.728205868,"data":"Batch [100/1587] DF Loss: 0.0155 | CH Loss: 0.7131\n"}
+,{"stream_name":"stdout","time":7553.67111695,"data":"Batch [150/1587] DF Loss: 3.0712 | CH Loss: 0.6540\n"}
+,{"stream_name":"stdout","time":7576.881937299,"data":"Batch [200/1587] DF Loss: 0.0007 | CH Loss: 0.7327\n"}
+,{"stream_name":"stdout","time":7599.670067522,"data":"Batch [250/1587] DF Loss: 1.0188 | CH Loss: 0.6899\n"}
+,{"stream_name":"stdout","time":7622.959034526,"data":"Batch [300/1587] DF Loss: 0.2124 | CH Loss: 0.6994\n"}
+,{"stream_name":"stdout","time":7645.817077111,"data":"Batch [350/1587] DF Loss: 0.0122 | CH Loss: 0.7408\n"}
+,{"stream_name":"stdout","time":7668.740445045,"data":"Batch [400/1587] DF Loss: 0.0807 | CH Loss: 0.6387\n"}
+,{"stream_name":"stdout","time":7691.8004761,"data":"Batch [450/1587] DF Loss: 0.0032 | CH Loss: 0.6550\n"}
+,{"stream_name":"stdout","time":7714.608712737,"data":"Batch [500/1587] DF Loss: 0.0001 | CH Loss: 0.7205\n"}
+,{"stream_name":"stdout","time":7737.513986223,"data":"Batch [550/1587] DF Loss: 0.1324 | CH Loss: 0.6727\n"}
+,{"stream_name":"stdout","time":7760.175387959,"data":"Batch [600/1587] DF Loss: 0.0000 | CH Loss: 0.6897\n"}
+,{"stream_name":"stdout","time":7782.945107271,"data":"Batch [650/1587] DF Loss: 0.0034 | CH Loss: 0.6253\n"}
+,{"stream_name":"stdout","time":7805.537530612,"data":"Batch [700/1587] DF Loss: 0.7626 | CH Loss: 0.7357\n"}
+,{"stream_name":"stdout","time":7828.432098174,"data":"Batch [750/1587] DF Loss: 0.0007 | CH Loss: 0.7012\n"}
+,{"stream_name":"stdout","time":7851.612083564,"data":"Batch [800/1587] DF Loss: 0.1158 | CH Loss: 0.6700\n"}
+,{"stream_name":"stdout","time":7874.714662953,"data":"Batch [850/1587] DF Loss: 1.5651 | CH Loss: 0.7206\n"}
+,{"stream_name":"stdout","time":7897.558510417,"data":"Batch [900/1587] DF Loss: 0.0023 | CH Loss: 0.7223\n"}
+,{"stream_name":"stdout","time":7920.462887094,"data":"Batch [950/1587] DF Loss: 0.0057 | CH Loss: 0.6911\n"}
+,{"stream_name":"stdout","time":7943.493885106,"data":"Batch [1000/1587] DF Loss: 0.0003 | CH Loss: 0.6732\n"}
+,{"stream_name":"stdout","time":7966.318793009,"data":"Batch [1050/1587] DF Loss: 0.0003 | CH Loss: 0.6728\n"}
+,{"stream_name":"stdout","time":7989.116207296,"data":"Batch [1100/1587] DF Loss: 0.0000 | CH Loss: 0.7030\n"}
+,{"stream_name":"stdout","time":8011.907614341,"data":"Batch [1150/1587] DF Loss: 0.0013 | CH Loss: 0.6359\n"}
+,{"stream_name":"stdout","time":8034.673619358,"data":"Batch [1200/1587] DF Loss: 0.0004 | CH Loss: 0.7384\n"}
+,{"stream_name":"stdout","time":8057.612835462,"data":"Batch [1250/1587] DF Loss: 0.0000 | CH Loss: 0.6791\n"}
+,{"stream_name":"stdout","time":8080.378947425,"data":"Batch [1300/1587] DF Loss: 0.0002 | CH Loss: 0.6899\n"}
+,{"stream_name":"stdout","time":8103.651112649,"data":"Batch [1350/1587] DF Loss: 0.0117 | CH Loss: 0.6860\n"}
+,{"stream_name":"stdout","time":8126.8635297,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.6713\n"}
+,{"stream_name":"stdout","time":8149.911289128,"data":"Batch [1450/1587] DF Loss: 0.0007 | CH Loss: 0.7012\n"}
+,{"stream_name":"stdout","time":8173.654027408,"data":"Batch [1500/1587] DF Loss: 0.0004 | CH Loss: 0.7356\n"}
+,{"stream_name":"stdout","time":8197.061722301,"data":"Batch [1550/1587] DF Loss: 2.3925 | CH Loss: 0.6946\n"}
+,{"stream_name":"stdout","time":8212.930539804,"data":"\n"}
+,{"stream_name":"stdout","time":8212.930585346,"data":"Epoch [10/30] Total Train Loss: 1.0372 | LR: 1.00e-04 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":8212.930592509,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":8537.651383119,"data":"Clean 2019 Val Loss: 0.0162 | Val Accuracy: 99.63% | Val EER: 0.3707%\n"}
+,{"stream_name":"stdout","time":8537.651416368,"data":"Early Stopping Counter: 1/5\n"}
+,{"stream_name":"stdout","time":8537.651421944,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":8539.692789255,"data":"Batch [0/1587] DF Loss: 0.0014 | CH Loss: 0.7284\n"}
+,{"stream_name":"stdout","time":8563.529205615,"data":"Batch [50/1587] DF Loss: 0.0002 | CH Loss: 0.7531\n"}
+,{"stream_name":"stdout","time":8586.894213346,"data":"Batch [100/1587] DF Loss: 2.1464 | CH Loss: 0.6632\n"}
+,{"stream_name":"stdout","time":8609.812108842,"data":"Batch [150/1587] DF Loss: 0.0003 | CH Loss: 0.6731\n"}
+,{"stream_name":"stdout","time":8633.017681787,"data":"Batch [200/1587] DF Loss: 0.0003 | CH Loss: 0.7208\n"}
+,{"stream_name":"stdout","time":8656.164087632,"data":"Batch [250/1587] DF Loss: 0.0003 | CH Loss: 0.6958\n"}
+,{"stream_name":"stdout","time":8679.314319832,"data":"Batch [300/1587] DF Loss: 0.0001 | CH Loss: 0.6979\n"}
+,{"stream_name":"stdout","time":8702.233164777,"data":"Batch [350/1587] DF Loss: 0.0005 | CH Loss: 0.7932\n"}
+,{"stream_name":"stdout","time":8725.39654496,"data":"Batch [400/1587] DF Loss: 0.0001 | CH Loss: 0.6958\n"}
+,{"stream_name":"stdout","time":8748.234631427,"data":"Batch [450/1587] DF Loss: 0.7942 | CH Loss: 0.7012\n"}
+,{"stream_name":"stdout","time":8771.298107914,"data":"Batch [500/1587] DF Loss: 0.0004 | CH Loss: 0.7611\n"}
+,{"stream_name":"stdout","time":8794.350698813,"data":"Batch [550/1587] DF Loss: 0.0516 | CH Loss: 0.7020\n"}
+,{"stream_name":"stdout","time":8817.353088994,"data":"Batch [600/1587] DF Loss: 0.0002 | CH Loss: 0.7661\n"}
+,{"stream_name":"stdout","time":8840.283599402,"data":"Batch [650/1587] DF Loss: 0.0127 | CH Loss: 0.6930\n"}
+,{"stream_name":"stdout","time":8863.070876226,"data":"Batch [700/1587] DF Loss: 0.0288 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":8886.119119026,"data":"Batch [750/1587] DF Loss: 0.0526 | CH Loss: 0.6931\n"}
+,{"stream_name":"stdout","time":8909.17114813,"data":"Batch [800/1587] DF Loss: 0.0001 | CH Loss: 0.6839\n"}
+,{"stream_name":"stdout","time":8931.92963238,"data":"Batch [850/1587] DF Loss: 0.0008 | CH Loss: 0.6942\n"}
+,{"stream_name":"stdout","time":8954.948741227,"data":"Batch [900/1587] DF Loss: 0.0001 | CH Loss: 0.8031\n"}
+,{"stream_name":"stdout","time":8977.944893738,"data":"Batch [950/1587] DF Loss: 1.3499 | CH Loss: 0.7164\n"}
+,{"stream_name":"stdout","time":9000.76625406,"data":"Batch [1000/1587] DF Loss: 0.0016 | CH Loss: 0.7247\n"}
+,{"stream_name":"stdout","time":9023.742301414,"data":"Batch [1050/1587] DF Loss: 0.0004 | CH Loss: 0.6834\n"}
+,{"stream_name":"stdout","time":9046.544748876,"data":"Batch [1100/1587] DF Loss: 0.0004 | CH Loss: 0.6878\n"}
+,{"stream_name":"stdout","time":9069.586110447,"data":"Batch [1150/1587] DF Loss: 1.8359 | CH Loss: 0.6900\n"}
+,{"stream_name":"stdout","time":9092.298450995,"data":"Batch [1200/1587] DF Loss: 0.0004 | CH Loss: 0.6804\n"}
+,{"stream_name":"stdout","time":9115.014150901,"data":"Batch [1250/1587] DF Loss: 0.0002 | CH Loss: 0.7113\n"}
+,{"stream_name":"stdout","time":9138.150521056,"data":"Batch [1300/1587] DF Loss: 0.0004 | CH Loss: 0.6976\n"}
+,{"stream_name":"stdout","time":9161.008119691,"data":"Batch [1350/1587] DF Loss: 0.0014 | CH Loss: 0.6686\n"}
+,{"stream_name":"stdout","time":9183.991006341,"data":"Batch [1400/1587] DF Loss: 1.8570 | CH Loss: 0.6981\n"}
+,{"stream_name":"stdout","time":9206.628106239,"data":"Batch [1450/1587] DF Loss: 0.0001 | CH Loss: 0.6832\n"}
+,{"stream_name":"stdout","time":9229.639423328,"data":"Batch [1500/1587] DF Loss: 0.0002 | CH Loss: 0.7256\n"}
+,{"stream_name":"stdout","time":9252.35506328,"data":"Batch [1550/1587] DF Loss: 0.0009 | CH Loss: 0.7062\n"}
+,{"stream_name":"stdout","time":9268.206874485,"data":"\n"}
+,{"stream_name":"stdout","time":9268.206905028,"data":"Epoch [11/30] Total Train Loss: 1.0490 | LR: 9.94e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":9270.117011908,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":9270.11703783,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":9272.377076474,"data":"Batch [0/1587] DF Loss: 0.0524 | CH Loss: 0.6833\n"}
+,{"stream_name":"stdout","time":9295.801899933,"data":"Batch [50/1587] DF Loss: 0.0002 | CH Loss: 0.6777\n"}
+,{"stream_name":"stdout","time":9318.723882161,"data":"Batch [100/1587] DF Loss: 0.0003 | CH Loss: 0.6541\n"}
+,{"stream_name":"stdout","time":9341.370557645,"data":"Batch [150/1587] DF Loss: 2.9638 | CH Loss: 0.7016\n"}
+,{"stream_name":"stdout","time":9364.237111523,"data":"Batch [200/1587] DF Loss: 0.0001 | CH Loss: 0.7232\n"}
+,{"stream_name":"stdout","time":9386.702924922,"data":"Batch [250/1587] DF Loss: 0.0008 | CH Loss: 0.7587\n"}
+,{"stream_name":"stdout","time":9409.685045654,"data":"Batch [300/1587] DF Loss: 2.7523 | CH Loss: 0.7129\n"}
+,{"stream_name":"stdout","time":9432.266297865,"data":"Batch [350/1587] DF Loss: 1.9757 | CH Loss: 0.7003\n"}
+,{"stream_name":"stdout","time":9455.087699659,"data":"Batch [400/1587] DF Loss: 0.0007 | CH Loss: 0.7288\n"}
+,{"stream_name":"stdout","time":9478.097711435,"data":"Batch [450/1587] DF Loss: 4.9103 | CH Loss: 0.6892\n"}
+,{"stream_name":"stdout","time":9500.497366859,"data":"Batch [500/1587] DF Loss: 0.0006 | CH Loss: 0.7077\n"}
+,{"stream_name":"stdout","time":9523.402231473,"data":"Batch [550/1587] DF Loss: 0.1036 | CH Loss: 0.6701\n"}
+,{"stream_name":"stdout","time":9545.831469778,"data":"Batch [600/1587] DF Loss: 0.0119 | CH Loss: 0.6902\n"}
+,{"stream_name":"stdout","time":9568.541098598,"data":"Batch [650/1587] DF Loss: 3.5032 | CH Loss: 0.7009\n"}
+,{"stream_name":"stdout","time":9591.375112536,"data":"Batch [700/1587] DF Loss: 0.0002 | CH Loss: 0.7282\n"}
+,{"stream_name":"stdout","time":9614.139380993,"data":"Batch [750/1587] DF Loss: 0.0001 | CH Loss: 0.7054\n"}
+,{"stream_name":"stdout","time":9637.039299235,"data":"Batch [800/1587] DF Loss: 0.0002 | CH Loss: 0.7454\n"}
+,{"stream_name":"stdout","time":9659.687594108,"data":"Batch [850/1587] DF Loss: 0.0489 | CH Loss: 0.6972\n"}
+,{"stream_name":"stdout","time":9682.553409999,"data":"Batch [900/1587] DF Loss: 0.0012 | CH Loss: 0.7026\n"}
+,{"stream_name":"stdout","time":9705.23320926,"data":"Batch [950/1587] DF Loss: 0.0004 | CH Loss: 0.6634\n"}
+,{"stream_name":"stdout","time":9727.867541837,"data":"Batch [1000/1587] DF Loss: 0.0006 | CH Loss: 0.6964\n"}
+,{"stream_name":"stdout","time":9750.721917626,"data":"Batch [1050/1587] DF Loss: 0.0002 | CH Loss: 0.6757\n"}
+,{"stream_name":"stdout","time":9773.302293284,"data":"Batch [1100/1587] DF Loss: 1.5975 | CH Loss: 0.7139\n"}
+,{"stream_name":"stdout","time":9795.930996538,"data":"Batch [1150/1587] DF Loss: 0.0001 | CH Loss: 0.6873\n"}
+,{"stream_name":"stdout","time":9818.693903779,"data":"Batch [1200/1587] DF Loss: 0.0004 | CH Loss: 0.6618\n"}
+,{"stream_name":"stdout","time":9841.253124618,"data":"Batch [1250/1587] DF Loss: 0.0005 | CH Loss: 0.6982\n"}
+,{"stream_name":"stdout","time":9864.19184755,"data":"Batch [1300/1587] DF Loss: 0.0004 | CH Loss: 0.7051\n"}
+,{"stream_name":"stdout","time":9886.71235883,"data":"Batch [1350/1587] DF Loss: 0.0001 | CH Loss: 0.6899\n"}
+,{"stream_name":"stdout","time":9909.59365184,"data":"Batch [1400/1587] DF Loss: 0.0000 | CH Loss: 0.7104\n"}
+,{"stream_name":"stdout","time":9932.112054907,"data":"Batch [1450/1587] DF Loss: 0.0002 | CH Loss: 0.6975\n"}
+,{"stream_name":"stdout","time":9955.084762086,"data":"Batch [1500/1587] DF Loss: 0.0004 | CH Loss: 0.6607\n"}
+,{"stream_name":"stdout","time":9977.812134801,"data":"Batch [1550/1587] DF Loss: 0.0007 | CH Loss: 0.6906\n"}
+,{"stream_name":"stdout","time":9993.406200374,"data":"\n"}
+,{"stream_name":"stdout","time":9993.406233825,"data":"Epoch [12/30] Total Train Loss: 0.9898 | LR: 9.76e-05 | Time: 12.1 min\n"}
+,{"stream_name":"stdout","time":9993.406251689,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":10309.374916557,"data":"Clean 2019 Val Loss: 0.0154 | Val Accuracy: 99.91% | Val EER: 0.1962%\n"}
+,{"stream_name":"stdout","time":10311.233397752,"data":"New best model saved with Clean 2019 EER: 0.1962%\n"}
+,{"stream_name":"stdout","time":10311.233450477,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":10313.450204082,"data":"Batch [0/1587] DF Loss: 0.0002 | CH Loss: 0.7134\n"}
+,{"stream_name":"stdout","time":10337.178462422,"data":"Batch [50/1587] DF Loss: 0.0005 | CH Loss: 0.6832\n"}
+,{"stream_name":"stdout","time":10360.81148337,"data":"Batch [100/1587] DF Loss: 1.6913 | CH Loss: 0.6946\n"}
+,{"stream_name":"stdout","time":10383.91664342,"data":"Batch [150/1587] DF Loss: 2.1693 | CH Loss: 0.6924\n"}
+,{"stream_name":"stdout","time":10407.389789213,"data":"Batch [200/1587] DF Loss: 0.0007 | CH Loss: 0.7213\n"}
+,{"stream_name":"stdout","time":10430.549374699,"data":"Batch [250/1587] DF Loss: 1.3521 | CH Loss: 0.6836\n"}
+,{"stream_name":"stdout","time":10453.717006167,"data":"Batch [300/1587] DF Loss: 0.0005 | CH Loss: 0.6431\n"}
+,{"stream_name":"stdout","time":10476.864392566,"data":"Batch [350/1587] DF Loss: 1.9974 | CH Loss: 0.6797\n"}
+,{"stream_name":"stdout","time":10499.793780812,"data":"Batch [400/1587] DF Loss: 0.0000 | CH Loss: 0.6932\n"}
+,{"stream_name":"stdout","time":10522.7537856,"data":"Batch [450/1587] DF Loss: 0.0002 | CH Loss: 0.6655\n"}
+,{"stream_name":"stdout","time":10545.722534737,"data":"Batch [500/1587] DF Loss: 0.0001 | CH Loss: 0.6826\n"}
+,{"stream_name":"stdout","time":10568.867502634,"data":"Batch [550/1587] DF Loss: 0.0932 | CH Loss: 0.6946\n"}
+,{"stream_name":"stdout","time":10592.015085102,"data":"Batch [600/1587] DF Loss: 0.1073 | CH Loss: 0.7037\n"}
+,{"stream_name":"stdout","time":10615.0635888,"data":"Batch [650/1587] DF Loss: 0.0001 | CH Loss: 0.6792\n"}
+,{"stream_name":"stdout","time":10638.114571295,"data":"Batch [700/1587] DF Loss: 0.0005 | CH Loss: 0.7222\n"}
+,{"stream_name":"stdout","time":10661.012392935,"data":"Batch [750/1587] DF Loss: 3.5710 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":10684.046864083,"data":"Batch [800/1587] DF Loss: 0.0001 | CH Loss: 0.6891\n"}
+,{"stream_name":"stdout","time":10706.819763442,"data":"Batch [850/1587] DF Loss: 0.0005 | CH Loss: 0.6820\n"}
+,{"stream_name":"stdout","time":10730.167048807,"data":"Batch [900/1587] DF Loss: 0.0004 | CH Loss: 0.7350\n"}
+,{"stream_name":"stdout","time":10752.945647013,"data":"Batch [950/1587] DF Loss: 0.0009 | CH Loss: 0.6907\n"}
+,{"stream_name":"stdout","time":10776.202596166,"data":"Batch [1000/1587] DF Loss: 0.0018 | CH Loss: 0.7107\n"}
+,{"stream_name":"stdout","time":10799.085747271,"data":"Batch [1050/1587] DF Loss: 0.0000 | CH Loss: 0.6739\n"}
+,{"stream_name":"stdout","time":10821.684678061,"data":"Batch [1100/1587] DF Loss: 4.3746 | CH Loss: 0.6997\n"}
+,{"stream_name":"stdout","time":10844.97505051,"data":"Batch [1150/1587] DF Loss: 0.0003 | CH Loss: 0.7116\n"}
+,{"stream_name":"stdout","time":10868.02060631,"data":"Batch [1200/1587] DF Loss: 0.0001 | CH Loss: 0.6923\n"}
+,{"stream_name":"stdout","time":10890.979226677,"data":"Batch [1250/1587] DF Loss: 0.0437 | CH Loss: 0.6832\n"}
+,{"stream_name":"stdout","time":10913.807511613,"data":"Batch [1300/1587] DF Loss: 0.0002 | CH Loss: 0.7250\n"}
+,{"stream_name":"stdout","time":10936.841498983,"data":"Batch [1350/1587] DF Loss: 0.0002 | CH Loss: 0.7336\n"}
+,{"stream_name":"stdout","time":10959.833565215,"data":"Batch [1400/1587] DF Loss: 3.1640 | CH Loss: 0.6869\n"}
+,{"stream_name":"stdout","time":10982.824071492,"data":"Batch [1450/1587] DF Loss: 0.0003 | CH Loss: 0.6673\n"}
+,{"stream_name":"stdout","time":11005.956374491,"data":"Batch [1500/1587] DF Loss: 0.0004 | CH Loss: 0.6591\n"}
+,{"stream_name":"stdout","time":11028.735460664,"data":"Batch [1550/1587] DF Loss: 0.0004 | CH Loss: 0.6856\n"}
+,{"stream_name":"stdout","time":11044.599281378,"data":"\n"}
+,{"stream_name":"stdout","time":11044.599314211,"data":"Epoch [13/30] Total Train Loss: 1.0293 | LR: 9.45e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":11046.31347031,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":11046.313501691,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":11048.426853508,"data":"Batch [0/1587] DF Loss: 0.0002 | CH Loss: 0.7418\n"}
+,{"stream_name":"stdout","time":11071.71797136,"data":"Batch [50/1587] DF Loss: 0.0001 | CH Loss: 0.6910\n"}
+,{"stream_name":"stdout","time":11094.624369582,"data":"Batch [100/1587] DF Loss: 0.0026 | CH Loss: 0.7179\n"}
+,{"stream_name":"stdout","time":11117.850018603,"data":"Batch [150/1587] DF Loss: 0.0000 | CH Loss: 0.6852\n"}
+,{"stream_name":"stdout","time":11140.851154584,"data":"Batch [200/1587] DF Loss: 0.0003 | CH Loss: 0.6959\n"}
+,{"stream_name":"stdout","time":11163.695456374,"data":"Batch [250/1587] DF Loss: 0.0001 | CH Loss: 0.6942\n"}
+,{"stream_name":"stdout","time":11186.942185361,"data":"Batch [300/1587] DF Loss: 0.0001 | CH Loss: 0.6812\n"}
+,{"stream_name":"stdout","time":11209.719117511,"data":"Batch [350/1587] DF Loss: 0.0003 | CH Loss: 0.7008\n"}
+,{"stream_name":"stdout","time":11232.909290051,"data":"Batch [400/1587] DF Loss: 0.0002 | CH Loss: 0.6920\n"}
+,{"stream_name":"stdout","time":11255.721979283,"data":"Batch [450/1587] DF Loss: 0.0001 | CH Loss: 0.7150\n"}
+,{"stream_name":"stdout","time":11278.699279567,"data":"Batch [500/1587] DF Loss: 0.0001 | CH Loss: 0.7287\n"}
+,{"stream_name":"stdout","time":11301.960375731,"data":"Batch [550/1587] DF Loss: 0.0005 | CH Loss: 0.6639\n"}
+,{"stream_name":"stdout","time":11324.97379642,"data":"Batch [600/1587] DF Loss: 0.0002 | CH Loss: 0.7062\n"}
+,{"stream_name":"stdout","time":11348.127699035,"data":"Batch [650/1587] DF Loss: 0.0004 | CH Loss: 0.7071\n"}
+,{"stream_name":"stdout","time":11371.216880494,"data":"Batch [700/1587] DF Loss: 0.0003 | CH Loss: 0.6838\n"}
+,{"stream_name":"stdout","time":11394.424226535,"data":"Batch [750/1587] DF Loss: 0.0002 | CH Loss: 0.6695\n"}
+,{"stream_name":"stdout","time":11417.723640724,"data":"Batch [800/1587] DF Loss: 0.0002 | CH Loss: 0.6429\n"}
+,{"stream_name":"stdout","time":11440.687926191,"data":"Batch [850/1587] DF Loss: 0.0002 | CH Loss: 0.6760\n"}
+,{"stream_name":"stdout","time":11463.760828205,"data":"Batch [900/1587] DF Loss: 0.9281 | CH Loss: 0.7077\n"}
+,{"stream_name":"stdout","time":11486.580003055,"data":"Batch [950/1587] DF Loss: 1.6020 | CH Loss: 0.6963\n"}
+,{"stream_name":"stdout","time":11509.442708404,"data":"Batch [1000/1587] DF Loss: 0.0170 | CH Loss: 0.6989\n"}
+,{"stream_name":"stdout","time":11532.568084008,"data":"Batch [1050/1587] DF Loss: 0.0003 | CH Loss: 0.7100\n"}
+,{"stream_name":"stdout","time":11555.545014189,"data":"Batch [1100/1587] DF Loss: 0.0028 | CH Loss: 0.6876\n"}
+,{"stream_name":"stdout","time":11578.502932862,"data":"Batch [1150/1587] DF Loss: 0.0003 | CH Loss: 0.6746\n"}
+,{"stream_name":"stdout","time":11601.390427995,"data":"Batch [1200/1587] DF Loss: 0.0610 | CH Loss: 0.6763\n"}
+,{"stream_name":"stdout","time":11624.146887513,"data":"Batch [1250/1587] DF Loss: 0.0011 | CH Loss: 0.7039\n"}
+,{"stream_name":"stdout","time":11647.095038456,"data":"Batch [1300/1587] DF Loss: 0.0002 | CH Loss: 0.6859\n"}
+,{"stream_name":"stdout","time":11669.976482759,"data":"Batch [1350/1587] DF Loss: 0.0004 | CH Loss: 0.7041\n"}
+,{"stream_name":"stdout","time":11692.92381356,"data":"Batch [1400/1587] DF Loss: 0.0004 | CH Loss: 0.7028\n"}
+,{"stream_name":"stdout","time":11715.99587941,"data":"Batch [1450/1587] DF Loss: 0.0006 | CH Loss: 0.6884\n"}
+,{"stream_name":"stdout","time":11738.945760079,"data":"Batch [1500/1587] DF Loss: 1.8179 | CH Loss: 0.6965\n"}
+,{"stream_name":"stdout","time":11762.084128808,"data":"Batch [1550/1587] DF Loss: 0.0021 | CH Loss: 0.6991\n"}
+,{"stream_name":"stdout","time":11777.62213153,"data":"\n"}
+,{"stream_name":"stdout","time":11777.622159896,"data":"Epoch [14/30] Total Train Loss: 1.0168 | LR: 9.04e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":11777.622166554,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":12094.240556924,"data":"Clean 2019 Val Loss: 0.0150 | Val Accuracy: 99.31% | Val EER: 0.5887%\n"}
+,{"stream_name":"stdout","time":12094.240599327,"data":"Early Stopping Counter: 1/5\n"}
+,{"stream_name":"stdout","time":12094.240605222,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":12096.356611119,"data":"Batch [0/1587] DF Loss: 0.0003 | CH Loss: 0.7051\n"}
+,{"stream_name":"stdout","time":12119.910298898,"data":"Batch [50/1587] DF Loss: 0.0127 | CH Loss: 0.6982\n"}
+,{"stream_name":"stdout","time":12142.986696708,"data":"Batch [100/1587] DF Loss: 0.0002 | CH Loss: 0.6972\n"}
+,{"stream_name":"stdout","time":12165.751391759,"data":"Batch [150/1587] DF Loss: 0.0001 | CH Loss: 0.6752\n"}
+,{"stream_name":"stdout","time":12188.720541514,"data":"Batch [200/1587] DF Loss: 0.0003 | CH Loss: 0.7263\n"}
+,{"stream_name":"stdout","time":12211.623795923,"data":"Batch [250/1587] DF Loss: 0.0001 | CH Loss: 0.6943\n"}
+,{"stream_name":"stdout","time":12234.677817443,"data":"Batch [300/1587] DF Loss: 0.0006 | CH Loss: 0.7080\n"}
+,{"stream_name":"stdout","time":12257.601788725,"data":"Batch [350/1587] DF Loss: 0.0870 | CH Loss: 0.6899\n"}
+,{"stream_name":"stdout","time":12280.693428021,"data":"Batch [400/1587] DF Loss: 0.0003 | CH Loss: 0.7016\n"}
+,{"stream_name":"stdout","time":12303.58758366,"data":"Batch [450/1587] DF Loss: 0.0000 | CH Loss: 0.7230\n"}
+,{"stream_name":"stdout","time":12326.714571942,"data":"Batch [500/1587] DF Loss: 0.0008 | CH Loss: 0.6977\n"}
+,{"stream_name":"stdout","time":12349.736322004,"data":"Batch [550/1587] DF Loss: 0.0005 | CH Loss: 0.7062\n"}
+,{"stream_name":"stdout","time":12372.515097402,"data":"Batch [600/1587] DF Loss: 0.0002 | CH Loss: 0.6852\n"}
+,{"stream_name":"stdout","time":12395.397635634,"data":"Batch [650/1587] DF Loss: 0.0610 | CH Loss: 0.6986\n"}
+,{"stream_name":"stdout","time":12418.351161727,"data":"Batch [700/1587] DF Loss: 0.0003 | CH Loss: 0.6831\n"}
+,{"stream_name":"stdout","time":12441.044986639,"data":"Batch [750/1587] DF Loss: 0.0004 | CH Loss: 0.6948\n"}
+,{"stream_name":"stdout","time":12463.819319799,"data":"Batch [800/1587] DF Loss: 0.0004 | CH Loss: 0.6535\n"}
+,{"stream_name":"stdout","time":12486.425699014,"data":"Batch [850/1587] DF Loss: 0.0612 | CH Loss: 0.6955\n"}
+,{"stream_name":"stdout","time":12509.58275414,"data":"Batch [900/1587] DF Loss: 0.0055 | CH Loss: 0.6962\n"}
+,{"stream_name":"stdout","time":12532.364460431,"data":"Batch [950/1587] DF Loss: 0.0008 | CH Loss: 0.7118\n"}
+,{"stream_name":"stdout","time":12555.326068985,"data":"Batch [1000/1587] DF Loss: 0.0007 | CH Loss: 0.6942\n"}
+,{"stream_name":"stdout","time":12578.259250255,"data":"Batch [1050/1587] DF Loss: 0.0013 | CH Loss: 0.6873\n"}
+,{"stream_name":"stdout","time":12600.800607579,"data":"Batch [1100/1587] DF Loss: 0.0002 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":12623.799555712,"data":"Batch [1150/1587] DF Loss: 0.0002 | CH Loss: 0.6893\n"}
+,{"stream_name":"stdout","time":12646.807675723,"data":"Batch [1200/1587] DF Loss: 0.0013 | CH Loss: 0.6761\n"}
+,{"stream_name":"stdout","time":12669.439207729,"data":"Batch [1250/1587] DF Loss: 0.0015 | CH Loss: 0.6974\n"}
+,{"stream_name":"stdout","time":12692.166047573,"data":"Batch [1300/1587] DF Loss: 2.7547 | CH Loss: 0.6858\n"}
+,{"stream_name":"stdout","time":12715.169936341,"data":"Batch [1350/1587] DF Loss: 0.0003 | CH Loss: 0.6830\n"}
+,{"stream_name":"stdout","time":12737.921918293,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.6896\n"}
+,{"stream_name":"stdout","time":12760.41010287,"data":"Batch [1450/1587] DF Loss: 0.0003 | CH Loss: 0.6808\n"}
+,{"stream_name":"stdout","time":12783.597306354,"data":"Batch [1500/1587] DF Loss: 0.0003 | CH Loss: 0.7034\n"}
+,{"stream_name":"stdout","time":12806.696050624,"data":"Batch [1550/1587] DF Loss: 0.0322 | CH Loss: 0.7362\n"}
+,{"stream_name":"stdout","time":12822.800570381,"data":"\n"}
+,{"stream_name":"stdout","time":12822.800601165,"data":"Epoch [15/30] Total Train Loss: 1.0083 | LR: 8.54e-05 | Time: 12.1 min\n"}
+,{"stream_name":"stdout","time":12824.102806827,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":12824.10283649,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":12826.253739796,"data":"Batch [0/1587] DF Loss: 0.0018 | CH Loss: 0.6847\n"}
+,{"stream_name":"stdout","time":12849.885041031,"data":"Batch [50/1587] DF Loss: 0.0002 | CH Loss: 0.7070\n"}
+,{"stream_name":"stdout","time":12872.969725468,"data":"Batch [100/1587] DF Loss: 0.0272 | CH Loss: 0.6852\n"}
+,{"stream_name":"stdout","time":12896.427357583,"data":"Batch [150/1587] DF Loss: 0.0008 | CH Loss: 0.6791\n"}
+,{"stream_name":"stdout","time":12919.62629268,"data":"Batch [200/1587] DF Loss: 0.0002 | CH Loss: 0.6845\n"}
+,{"stream_name":"stdout","time":12943.104158745,"data":"Batch [250/1587] DF Loss: 0.0001 | CH Loss: 0.6525\n"}
+,{"stream_name":"stdout","time":12966.239336744,"data":"Batch [300/1587] DF Loss: 0.0004 | CH Loss: 0.7075\n"}
+,{"stream_name":"stdout","time":12989.295352244,"data":"Batch [350/1587] DF Loss: 0.0001 | CH Loss: 0.6945\n"}
+,{"stream_name":"stdout","time":13012.318856055,"data":"Batch [400/1587] DF Loss: 0.0004 | CH Loss: 0.7247\n"}
+,{"stream_name":"stdout","time":13035.236945033,"data":"Batch [450/1587] DF Loss: 0.0441 | CH Loss: 0.6886\n"}
+,{"stream_name":"stdout","time":13058.673236084,"data":"Batch [500/1587] DF Loss: 1.6327 | CH Loss: 0.6761\n"}
+,{"stream_name":"stdout","time":13081.515756644,"data":"Batch [550/1587] DF Loss: 0.0320 | CH Loss: 0.7083\n"}
+,{"stream_name":"stdout","time":13104.371892657,"data":"Batch [600/1587] DF Loss: 3.1194 | CH Loss: 0.6989\n"}
+,{"stream_name":"stdout","time":13127.438908661,"data":"Batch [650/1587] DF Loss: 1.6227 | CH Loss: 0.7111\n"}
+,{"stream_name":"stdout","time":13150.647733707,"data":"Batch [700/1587] DF Loss: 0.0003 | CH Loss: 0.6897\n"}
+,{"stream_name":"stdout","time":13173.849048801,"data":"Batch [750/1587] DF Loss: 1.8461 | CH Loss: 0.6873\n"}
+,{"stream_name":"stdout","time":13196.892392834,"data":"Batch [800/1587] DF Loss: 0.0020 | CH Loss: 0.6799\n"}
+,{"stream_name":"stdout","time":13220.121152074,"data":"Batch [850/1587] DF Loss: 0.0003 | CH Loss: 0.7104\n"}
+,{"stream_name":"stdout","time":13242.9164529,"data":"Batch [900/1587] DF Loss: 0.0003 | CH Loss: 0.6864\n"}
+,{"stream_name":"stdout","time":13265.955539442,"data":"Batch [950/1587] DF Loss: 4.4872 | CH Loss: 0.6877\n"}
+,{"stream_name":"stdout","time":13288.873992985,"data":"Batch [1000/1587] DF Loss: 0.0001 | CH Loss: 0.6877\n"}
+,{"stream_name":"stdout","time":13311.762417048,"data":"Batch [1050/1587] DF Loss: 0.0003 | CH Loss: 0.6938\n"}
+,{"stream_name":"stdout","time":13334.917131375,"data":"Batch [1100/1587] DF Loss: 0.0005 | CH Loss: 0.6749\n"}
+,{"stream_name":"stdout","time":13357.65015696,"data":"Batch [1150/1587] DF Loss: 0.0003 | CH Loss: 0.7077\n"}
+,{"stream_name":"stdout","time":13380.654113213,"data":"Batch [1200/1587] DF Loss: 0.0002 | CH Loss: 0.6995\n"}
+,{"stream_name":"stdout","time":13403.494103624,"data":"Batch [1250/1587] DF Loss: 0.0003 | CH Loss: 0.6651\n"}
+,{"stream_name":"stdout","time":13426.715878819,"data":"Batch [1300/1587] DF Loss: 0.0072 | CH Loss: 0.6823\n"}
+,{"stream_name":"stdout","time":13449.359680865,"data":"Batch [1350/1587] DF Loss: 0.0002 | CH Loss: 0.7111\n"}
+,{"stream_name":"stdout","time":13472.507855125,"data":"Batch [1400/1587] DF Loss: 0.0015 | CH Loss: 0.6896\n"}
+,{"stream_name":"stdout","time":13495.587545928,"data":"Batch [1450/1587] DF Loss: 0.0006 | CH Loss: 0.6664\n"}
+,{"stream_name":"stdout","time":13518.639910859,"data":"Batch [1500/1587] DF Loss: 0.0016 | CH Loss: 0.6787\n"}
+,{"stream_name":"stdout","time":13541.813103602,"data":"Batch [1550/1587] DF Loss: 0.0002 | CH Loss: 0.6952\n"}
+,{"stream_name":"stdout","time":13557.694726388,"data":"\n"}
+,{"stream_name":"stdout","time":13557.694759159,"data":"Epoch [16/30] Total Train Loss: 0.9914 | LR: 7.94e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":13557.694765202,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":13873.377782512,"data":"Clean 2019 Val Loss: 0.0460 | Val Accuracy: 98.51% | Val EER: 2.0408%\n"}
+,{"stream_name":"stdout","time":13873.37781553,"data":"Early Stopping Counter: 2/5\n"}
+,{"stream_name":"stdout","time":13873.377821259,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":13875.422694756,"data":"Batch [0/1587] DF Loss: 0.0001 | CH Loss: 0.7084\n"}
+,{"stream_name":"stdout","time":13898.342056402,"data":"Batch [50/1587] DF Loss: 0.0011 | CH Loss: 0.6830\n"}
+,{"stream_name":"stdout","time":13921.76376347,"data":"Batch [100/1587] DF Loss: 0.0007 | CH Loss: 0.7043\n"}
+,{"stream_name":"stdout","time":13944.717234833,"data":"Batch [150/1587] DF Loss: 0.0002 | CH Loss: 0.6953\n"}
+,{"stream_name":"stdout","time":13968.06605269,"data":"Batch [200/1587] DF Loss: 0.0013 | CH Loss: 0.7155\n"}
+,{"stream_name":"stdout","time":13990.887103485,"data":"Batch [250/1587] DF Loss: 1.6382 | CH Loss: 0.6928\n"}
+,{"stream_name":"stdout","time":14013.892661973,"data":"Batch [300/1587] DF Loss: 0.0001 | CH Loss: 0.6933\n"}
+,{"stream_name":"stdout","time":14036.874922651,"data":"Batch [350/1587] DF Loss: 0.0002 | CH Loss: 0.6717\n"}
+,{"stream_name":"stdout","time":14059.938442283,"data":"Batch [400/1587] DF Loss: 0.0009 | CH Loss: 0.6916\n"}
+,{"stream_name":"stdout","time":14082.952368447,"data":"Batch [450/1587] DF Loss: 0.0040 | CH Loss: 0.6862\n"}
+,{"stream_name":"stdout","time":14106.062989803,"data":"Batch [500/1587] DF Loss: 0.0005 | CH Loss: 0.6792\n"}
+,{"stream_name":"stdout","time":14128.986207532,"data":"Batch [550/1587] DF Loss: 1.8239 | CH Loss: 0.6934\n"}
+,{"stream_name":"stdout","time":14152.085040875,"data":"Batch [600/1587] DF Loss: 0.0002 | CH Loss: 0.7058\n"}
+,{"stream_name":"stdout","time":14175.122566973,"data":"Batch [650/1587] DF Loss: 0.0006 | CH Loss: 0.7164\n"}
+,{"stream_name":"stdout","time":14198.084726429,"data":"Batch [700/1587] DF Loss: 0.0010 | CH Loss: 0.7046\n"}
+,{"stream_name":"stdout","time":14220.947112753,"data":"Batch [750/1587] DF Loss: 0.0008 | CH Loss: 0.7096\n"}
+,{"stream_name":"stdout","time":14243.993804371,"data":"Batch [800/1587] DF Loss: 0.0003 | CH Loss: 0.6909\n"}
+,{"stream_name":"stdout","time":14266.958926553,"data":"Batch [850/1587] DF Loss: 0.0904 | CH Loss: 0.6678\n"}
+,{"stream_name":"stdout","time":14289.853352938,"data":"Batch [900/1587] DF Loss: 3.0668 | CH Loss: 0.7021\n"}
+,{"stream_name":"stdout","time":14312.559380332,"data":"Batch [950/1587] DF Loss: 0.0007 | CH Loss: 0.7174\n"}
+,{"stream_name":"stdout","time":14335.339941539,"data":"Batch [1000/1587] DF Loss: 1.8948 | CH Loss: 0.6912\n"}
+,{"stream_name":"stdout","time":14358.363617983,"data":"Batch [1050/1587] DF Loss: 0.0001 | CH Loss: 0.7155\n"}
+,{"stream_name":"stdout","time":14381.27148203,"data":"Batch [1100/1587] DF Loss: 0.0002 | CH Loss: 0.6830\n"}
+,{"stream_name":"stdout","time":14403.854648314,"data":"Batch [1150/1587] DF Loss: 0.0010 | CH Loss: 0.6979\n"}
+,{"stream_name":"stdout","time":14427.030317366,"data":"Batch [1200/1587] DF Loss: 0.0003 | CH Loss: 0.6915\n"}
+,{"stream_name":"stdout","time":14449.699751295,"data":"Batch [1250/1587] DF Loss: 0.0003 | CH Loss: 0.6941\n"}
+,{"stream_name":"stdout","time":14472.954109077,"data":"Batch [1300/1587] DF Loss: 0.1087 | CH Loss: 0.6906\n"}
+,{"stream_name":"stdout","time":14495.809870832,"data":"Batch [1350/1587] DF Loss: 0.0007 | CH Loss: 0.6809\n"}
+,{"stream_name":"stdout","time":14518.996308972,"data":"Batch [1400/1587] DF Loss: 0.0743 | CH Loss: 0.7042\n"}
+,{"stream_name":"stdout","time":14542.006646787,"data":"Batch [1450/1587] DF Loss: 3.4221 | CH Loss: 0.6776\n"}
+,{"stream_name":"stdout","time":14565.327934668,"data":"Batch [1500/1587] DF Loss: 0.0002 | CH Loss: 0.7053\n"}
+,{"stream_name":"stdout","time":14588.333165192,"data":"Batch [1550/1587] DF Loss: 0.0004 | CH Loss: 0.6667\n"}
+,{"stream_name":"stdout","time":14604.218186039,"data":"\n"}
+,{"stream_name":"stdout","time":14604.218214302,"data":"Epoch [17/30] Total Train Loss: 1.0042 | LR: 7.27e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":14605.542040131,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":14605.542069136,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":14607.706213928,"data":"Batch [0/1587] DF Loss: 0.0002 | CH Loss: 0.6954\n"}
+,{"stream_name":"stdout","time":14631.372471795,"data":"Batch [50/1587] DF Loss: 0.0005 | CH Loss: 0.6925\n"}
+,{"stream_name":"stdout","time":14654.531830618,"data":"Batch [100/1587] DF Loss: 0.0006 | CH Loss: 0.7058\n"}
+,{"stream_name":"stdout","time":14677.449663904,"data":"Batch [150/1587] DF Loss: 0.0016 | CH Loss: 0.6666\n"}
+,{"stream_name":"stdout","time":14700.58219788,"data":"Batch [200/1587] DF Loss: 0.0001 | CH Loss: 0.6926\n"}
+,{"stream_name":"stdout","time":14723.394522151,"data":"Batch [250/1587] DF Loss: 1.6338 | CH Loss: 0.6922\n"}
+,{"stream_name":"stdout","time":14746.651404106,"data":"Batch [300/1587] DF Loss: 0.0008 | CH Loss: 0.6984\n"}
+,{"stream_name":"stdout","time":14769.781309432,"data":"Batch [350/1587] DF Loss: 0.0004 | CH Loss: 0.6546\n"}
+,{"stream_name":"stdout","time":14793.029479245,"data":"Batch [400/1587] DF Loss: 0.0504 | CH Loss: 0.6907\n"}
+,{"stream_name":"stdout","time":14815.991045231,"data":"Batch [450/1587] DF Loss: 0.0001 | CH Loss: 0.6944\n"}
+,{"stream_name":"stdout","time":14839.28507549,"data":"Batch [500/1587] DF Loss: 1.7387 | CH Loss: 0.6979\n"}
+,{"stream_name":"stdout","time":14862.104508709,"data":"Batch [550/1587] DF Loss: 0.0002 | CH Loss: 0.7247\n"}
+,{"stream_name":"stdout","time":14884.939443948,"data":"Batch [600/1587] DF Loss: 0.1053 | CH Loss: 0.7036\n"}
+,{"stream_name":"stdout","time":14908.030669265,"data":"Batch [650/1587] DF Loss: 0.0007 | CH Loss: 0.7052\n"}
+,{"stream_name":"stdout","time":14930.974275957,"data":"Batch [700/1587] DF Loss: 0.0303 | CH Loss: 0.6767\n"}
+,{"stream_name":"stdout","time":14953.986799792,"data":"Batch [750/1587] DF Loss: 0.0007 | CH Loss: 0.6595\n"}
+,{"stream_name":"stdout","time":14976.839559056,"data":"Batch [800/1587] DF Loss: 3.1129 | CH Loss: 0.6943\n"}
+,{"stream_name":"stdout","time":15000.07929781,"data":"Batch [850/1587] DF Loss: 5.8086 | CH Loss: 0.6917\n"}
+,{"stream_name":"stdout","time":15023.205438978,"data":"Batch [900/1587] DF Loss: 0.0003 | CH Loss: 0.7065\n"}
+,{"stream_name":"stdout","time":15046.098194779,"data":"Batch [950/1587] DF Loss: 0.0002 | CH Loss: 0.7163\n"}
+,{"stream_name":"stdout","time":15069.490365158,"data":"Batch [1000/1587] DF Loss: 0.0003 | CH Loss: 0.6867\n"}
+,{"stream_name":"stdout","time":15092.155610419,"data":"Batch [1050/1587] DF Loss: 0.0009 | CH Loss: 0.6717\n"}
+,{"stream_name":"stdout","time":15115.460835345,"data":"Batch [1100/1587] DF Loss: 0.0003 | CH Loss: 0.7047\n"}
+,{"stream_name":"stdout","time":15138.25571411,"data":"Batch [1150/1587] DF Loss: 1.9082 | CH Loss: 0.6895\n"}
+,{"stream_name":"stdout","time":15161.053542667,"data":"Batch [1200/1587] DF Loss: 0.0002 | CH Loss: 0.6824\n"}
+,{"stream_name":"stdout","time":15183.795732032,"data":"Batch [1250/1587] DF Loss: 0.9552 | CH Loss: 0.6718\n"}
+,{"stream_name":"stdout","time":15206.783895169,"data":"Batch [1300/1587] DF Loss: 0.0004 | CH Loss: 0.7004\n"}
+,{"stream_name":"stdout","time":15229.690118857,"data":"Batch [1350/1587] DF Loss: 3.0700 | CH Loss: 0.7093\n"}
+,{"stream_name":"stdout","time":15252.527316565,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.7159\n"}
+,{"stream_name":"stdout","time":15275.467286495,"data":"Batch [1450/1587] DF Loss: 0.0010 | CH Loss: 0.6741\n"}
+,{"stream_name":"stdout","time":15298.607366919,"data":"Batch [1500/1587] DF Loss: 2.8313 | CH Loss: 0.7001\n"}
+,{"stream_name":"stdout","time":15321.383249403,"data":"Batch [1550/1587] DF Loss: 0.0472 | CH Loss: 0.6772\n"}
+,{"stream_name":"stdout","time":15337.208904682,"data":"\n"}
+,{"stream_name":"stdout","time":15337.208939462,"data":"Epoch [18/30] Total Train Loss: 1.0132 | LR: 6.54e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":15337.208957893,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":15651.361642638,"data":"Clean 2019 Val Loss: 0.0134 | Val Accuracy: 99.94% | Val EER: 0.5495%\n"}
+,{"stream_name":"stdout","time":15651.3616851,"data":"Early Stopping Counter: 3/5\n"}
+,{"stream_name":"stdout","time":15651.361689154,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":15653.366018424,"data":"Batch [0/1587] DF Loss: 0.0003 | CH Loss: 0.6847\n"}
+,{"stream_name":"stdout","time":15676.439107964,"data":"Batch [50/1587] DF Loss: 0.0003 | CH Loss: 0.6960\n"}
+,{"stream_name":"stdout","time":15699.731461608,"data":"Batch [100/1587] DF Loss: 0.0043 | CH Loss: 0.7175\n"}
+,{"stream_name":"stdout","time":15722.607183813,"data":"Batch [150/1587] DF Loss: 1.6187 | CH Loss: 0.6839\n"}
+,{"stream_name":"stdout","time":15745.679853196,"data":"Batch [200/1587] DF Loss: 0.0002 | CH Loss: 0.7040\n"}
+,{"stream_name":"stdout","time":15768.430737781,"data":"Batch [250/1587] DF Loss: 0.0251 | CH Loss: 0.6906\n"}
+,{"stream_name":"stdout","time":15791.579091088,"data":"Batch [300/1587] DF Loss: 0.0020 | CH Loss: 0.6992\n"}
+,{"stream_name":"stdout","time":15814.513878363,"data":"Batch [350/1587] DF Loss: 0.0728 | CH Loss: 0.6933\n"}
+,{"stream_name":"stdout","time":15837.23707016,"data":"Batch [400/1587] DF Loss: 1.8369 | CH Loss: 0.6907\n"}
+,{"stream_name":"stdout","time":15860.189550777,"data":"Batch [450/1587] DF Loss: 1.8332 | CH Loss: 0.6857\n"}
+,{"stream_name":"stdout","time":15883.038184409,"data":"Batch [500/1587] DF Loss: 0.0007 | CH Loss: 0.6729\n"}
+,{"stream_name":"stdout","time":15905.948538341,"data":"Batch [550/1587] DF Loss: 1.9264 | CH Loss: 0.6766\n"}
+,{"stream_name":"stdout","time":15928.633093668,"data":"Batch [600/1587] DF Loss: 4.9117 | CH Loss: 0.6936\n"}
+,{"stream_name":"stdout","time":15951.898458059,"data":"Batch [650/1587] DF Loss: 0.0001 | CH Loss: 0.6854\n"}
+,{"stream_name":"stdout","time":15974.821023731,"data":"Batch [700/1587] DF Loss: 0.0001 | CH Loss: 0.6763\n"}
+,{"stream_name":"stdout","time":15997.278988068,"data":"Batch [750/1587] DF Loss: 0.0003 | CH Loss: 0.6800\n"}
+,{"stream_name":"stdout","time":16020.32352641,"data":"Batch [800/1587] DF Loss: 0.0297 | CH Loss: 0.7099\n"}
+,{"stream_name":"stdout","time":16043.28672138,"data":"Batch [850/1587] DF Loss: 0.0001 | CH Loss: 0.7060\n"}
+,{"stream_name":"stdout","time":16066.402481762,"data":"Batch [900/1587] DF Loss: 0.0441 | CH Loss: 0.7025\n"}
+,{"stream_name":"stdout","time":16089.60219069,"data":"Batch [950/1587] DF Loss: 0.0002 | CH Loss: 0.6811\n"}
+,{"stream_name":"stdout","time":16112.559733109,"data":"Batch [1000/1587] DF Loss: 0.0000 | CH Loss: 0.6925\n"}
+,{"stream_name":"stdout","time":16135.226384789,"data":"Batch [1050/1587] DF Loss: 0.0645 | CH Loss: 0.7079\n"}
+,{"stream_name":"stdout","time":16158.242102568,"data":"Batch [1100/1587] DF Loss: 0.0313 | CH Loss: 0.7054\n"}
+,{"stream_name":"stdout","time":16181.090460004,"data":"Batch [1150/1587] DF Loss: 0.0006 | CH Loss: 0.7088\n"}
+,{"stream_name":"stdout","time":16204.238186669,"data":"Batch [1200/1587] DF Loss: 0.0009 | CH Loss: 0.6933\n"}
+,{"stream_name":"stdout","time":16226.955939237,"data":"Batch [1250/1587] DF Loss: 0.0001 | CH Loss: 0.7126\n"}
+,{"stream_name":"stdout","time":16250.184792956,"data":"Batch [1300/1587] DF Loss: 1.5977 | CH Loss: 0.6696\n"}
+,{"stream_name":"stdout","time":16273.055004534,"data":"Batch [1350/1587] DF Loss: 0.0000 | CH Loss: 0.7017\n"}
+,{"stream_name":"stdout","time":16295.600097733,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.6905\n"}
+,{"stream_name":"stdout","time":16318.807708047,"data":"Batch [1450/1587] DF Loss: 0.0005 | CH Loss: 0.7016\n"}
+,{"stream_name":"stdout","time":16341.832546163,"data":"Batch [1500/1587] DF Loss: 0.0001 | CH Loss: 0.6909\n"}
+,{"stream_name":"stdout","time":16364.919682264,"data":"Batch [1550/1587] DF Loss: 0.0003 | CH Loss: 0.6816\n"}
+,{"stream_name":"stdout","time":16380.837583464,"data":"\n"}
+,{"stream_name":"stdout","time":16380.837618178,"data":"Epoch [19/30] Total Train Loss: 0.9515 | LR: 5.78e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":16382.134417065,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":16382.134446818,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":16384.19998402,"data":"Batch [0/1587] DF Loss: 1.8544 | CH Loss: 0.6966\n"}
+,{"stream_name":"stdout","time":16407.435072189,"data":"Batch [50/1587] DF Loss: 0.0001 | CH Loss: 0.7117\n"}
+,{"stream_name":"stdout","time":16430.661478735,"data":"Batch [100/1587] DF Loss: 0.0011 | CH Loss: 0.6671\n"}
+,{"stream_name":"stdout","time":16453.64220683,"data":"Batch [150/1587] DF Loss: 0.0005 | CH Loss: 0.6935\n"}
+,{"stream_name":"stdout","time":16476.638122313,"data":"Batch [200/1587] DF Loss: 1.6668 | CH Loss: 0.6967\n"}
+,{"stream_name":"stdout","time":16499.628950273,"data":"Batch [250/1587] DF Loss: 0.0001 | CH Loss: 0.7100\n"}
+,{"stream_name":"stdout","time":16522.719091231,"data":"Batch [300/1587] DF Loss: 0.0002 | CH Loss: 0.6685\n"}
+,{"stream_name":"stdout","time":16545.775010801,"data":"Batch [350/1587] DF Loss: 0.0008 | CH Loss: 0.6708\n"}
+,{"stream_name":"stdout","time":16568.820821136,"data":"Batch [400/1587] DF Loss: 0.0003 | CH Loss: 0.6732\n"}
+,{"stream_name":"stdout","time":16591.947913292,"data":"Batch [450/1587] DF Loss: 0.0003 | CH Loss: 0.7061\n"}
+,{"stream_name":"stdout","time":16615.115563855,"data":"Batch [500/1587] DF Loss: 0.0002 | CH Loss: 0.6938\n"}
+,{"stream_name":"stdout","time":16638.3455257,"data":"Batch [550/1587] DF Loss: 3.2947 | CH Loss: 0.6947\n"}
+,{"stream_name":"stdout","time":16661.399320942,"data":"Batch [600/1587] DF Loss: 0.0005 | CH Loss: 0.7029\n"}
+,{"stream_name":"stdout","time":16684.396723955,"data":"Batch [650/1587] DF Loss: 0.0003 | CH Loss: 0.6820\n"}
+,{"stream_name":"stdout","time":16707.49490999,"data":"Batch [700/1587] DF Loss: 0.0001 | CH Loss: 0.7031\n"}
+,{"stream_name":"stdout","time":16730.184673844,"data":"Batch [750/1587] DF Loss: 0.0002 | CH Loss: 0.6809\n"}
+,{"stream_name":"stdout","time":16753.114149851,"data":"Batch [800/1587] DF Loss: 0.0002 | CH Loss: 0.7055\n"}
+,{"stream_name":"stdout","time":16776.441050492,"data":"Batch [850/1587] DF Loss: 0.0001 | CH Loss: 0.6768\n"}
+,{"stream_name":"stdout","time":16799.28347381,"data":"Batch [900/1587] DF Loss: 0.0033 | CH Loss: 0.6894\n"}
+,{"stream_name":"stdout","time":16822.459637167,"data":"Batch [950/1587] DF Loss: 0.0006 | CH Loss: 0.7055\n"}
+,{"stream_name":"stdout","time":16845.365783093,"data":"Batch [1000/1587] DF Loss: 0.0003 | CH Loss: 0.6826\n"}
+,{"stream_name":"stdout","time":16868.335615024,"data":"Batch [1050/1587] DF Loss: 0.0005 | CH Loss: 0.6900\n"}
+,{"stream_name":"stdout","time":16891.536614117,"data":"Batch [1100/1587] DF Loss: 0.0001 | CH Loss: 0.7006\n"}
+,{"stream_name":"stdout","time":16914.647314175,"data":"Batch [1150/1587] DF Loss: 0.0003 | CH Loss: 0.7136\n"}
+,{"stream_name":"stdout","time":16937.931363023,"data":"Batch [1200/1587] DF Loss: 0.0003 | CH Loss: 0.7039\n"}
+,{"stream_name":"stdout","time":16961.019732969,"data":"Batch [1250/1587] DF Loss: 0.0005 | CH Loss: 0.6952\n"}
+,{"stream_name":"stdout","time":16984.150443028,"data":"Batch [1300/1587] DF Loss: 2.1863 | CH Loss: 0.7006\n"}
+,{"stream_name":"stdout","time":17007.367460386,"data":"Batch [1350/1587] DF Loss: 0.0004 | CH Loss: 0.6818\n"}
+,{"stream_name":"stdout","time":17030.249184853,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.6775\n"}
+,{"stream_name":"stdout","time":17053.477810301,"data":"Batch [1450/1587] DF Loss: 0.0002 | CH Loss: 0.7076\n"}
+,{"stream_name":"stdout","time":17076.514147518,"data":"Batch [1500/1587] DF Loss: 1.8508 | CH Loss: 0.6948\n"}
+,{"stream_name":"stdout","time":17099.555798462,"data":"Batch [1550/1587] DF Loss: 0.0001 | CH Loss: 0.6764\n"}
+,{"stream_name":"stdout","time":17115.289501333,"data":"\n"}
+,{"stream_name":"stdout","time":17115.28953109,"data":"Epoch [20/30] Total Train Loss: 0.9457 | LR: 5.00e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":17115.289537414,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":17428.634990943,"data":"Clean 2019 Val Loss: 0.0235 | Val Accuracy: 99.88% | Val EER: 1.1381%\n"}
+,{"stream_name":"stdout","time":17428.635028451,"data":"Early Stopping Counter: 4/5\n"}
+,{"stream_name":"stdout","time":17428.635034362,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":17430.61785121,"data":"Batch [0/1587] DF Loss: 0.0003 | CH Loss: 0.7053\n"}
+,{"stream_name":"stdout","time":17453.564595769,"data":"Batch [50/1587] DF Loss: 0.0003 | CH Loss: 0.6680\n"}
+,{"stream_name":"stdout","time":17476.863277609,"data":"Batch [100/1587] DF Loss: 0.0035 | CH Loss: 0.7003\n"}
+,{"stream_name":"stdout","time":17499.718779609,"data":"Batch [150/1587] DF Loss: 0.0003 | CH Loss: 0.7052\n"}
+,{"stream_name":"stdout","time":17522.659051636,"data":"Batch [200/1587] DF Loss: 2.0283 | CH Loss: 0.6951\n"}
+,{"stream_name":"stdout","time":17545.44376026,"data":"Batch [250/1587] DF Loss: 0.0714 | CH Loss: 0.6961\n"}
+,{"stream_name":"stdout","time":17568.294091128,"data":"Batch [300/1587] DF Loss: 0.0003 | CH Loss: 0.6829\n"}
+,{"stream_name":"stdout","time":17591.324013118,"data":"Batch [350/1587] DF Loss: 0.0005 | CH Loss: 0.6640\n"}
+,{"stream_name":"stdout","time":17614.293070168,"data":"Batch [400/1587] DF Loss: 0.0001 | CH Loss: 0.7113\n"}
+,{"stream_name":"stdout","time":17637.150631902,"data":"Batch [450/1587] DF Loss: 0.0017 | CH Loss: 0.6952\n"}
+,{"stream_name":"stdout","time":17660.455179312,"data":"Batch [500/1587] DF Loss: 0.0003 | CH Loss: 0.6926\n"}
+,{"stream_name":"stdout","time":17683.283024022,"data":"Batch [550/1587] DF Loss: 0.0015 | CH Loss: 0.7383\n"}
+,{"stream_name":"stdout","time":17706.363768232,"data":"Batch [600/1587] DF Loss: 0.0006 | CH Loss: 0.6700\n"}
+,{"stream_name":"stdout","time":17729.283849452,"data":"Batch [650/1587] DF Loss: 0.0001 | CH Loss: 0.6674\n"}
+,{"stream_name":"stdout","time":17751.982012811,"data":"Batch [700/1587] DF Loss: 0.0001 | CH Loss: 0.6839\n"}
+,{"stream_name":"stdout","time":17774.992738067,"data":"Batch [750/1587] DF Loss: 0.0001 | CH Loss: 0.6942\n"}
+,{"stream_name":"stdout","time":17798.102114498,"data":"Batch [800/1587] DF Loss: 2.8456 | CH Loss: 0.6956\n"}
+,{"stream_name":"stdout","time":17821.264248461,"data":"Batch [850/1587] DF Loss: 0.0004 | CH Loss: 0.7008\n"}
+,{"stream_name":"stdout","time":17844.112538508,"data":"Batch [900/1587] DF Loss: 0.0002 | CH Loss: 0.7092\n"}
+,{"stream_name":"stdout","time":17866.94513353,"data":"Batch [950/1587] DF Loss: 0.0005 | CH Loss: 0.7074\n"}
+,{"stream_name":"stdout","time":17890.217258934,"data":"Batch [1000/1587] DF Loss: 0.0007 | CH Loss: 0.7052\n"}
+,{"stream_name":"stdout","time":17913.148239012,"data":"Batch [1050/1587] DF Loss: 0.0008 | CH Loss: 0.7169\n"}
+,{"stream_name":"stdout","time":17936.227247346,"data":"Batch [1100/1587] DF Loss: 0.0002 | CH Loss: 0.7008\n"}
+,{"stream_name":"stdout","time":17959.018426085,"data":"Batch [1150/1587] DF Loss: 0.0003 | CH Loss: 0.6937\n"}
+,{"stream_name":"stdout","time":17981.972440111,"data":"Batch [1200/1587] DF Loss: 0.0003 | CH Loss: 0.6709\n"}
+,{"stream_name":"stdout","time":18005.028073909,"data":"Batch [1250/1587] DF Loss: 1.4559 | CH Loss: 0.6878\n"}
+,{"stream_name":"stdout","time":18027.824438501,"data":"Batch [1300/1587] DF Loss: 0.0003 | CH Loss: 0.6933\n"}
+,{"stream_name":"stdout","time":18050.942404062,"data":"Batch [1350/1587] DF Loss: 1.7709 | CH Loss: 0.6951\n"}
+,{"stream_name":"stdout","time":18073.713100034,"data":"Batch [1400/1587] DF Loss: 0.0002 | CH Loss: 0.7197\n"}
+,{"stream_name":"stdout","time":18096.769472157,"data":"Batch [1450/1587] DF Loss: 0.0005 | CH Loss: 0.6548\n"}
+,{"stream_name":"stdout","time":18119.602435792,"data":"Batch [1500/1587] DF Loss: 0.0001 | CH Loss: 0.6949\n"}
+,{"stream_name":"stdout","time":18142.346065658,"data":"Batch [1550/1587] DF Loss: 3.2151 | CH Loss: 0.7049\n"}
+,{"stream_name":"stdout","time":18158.566847016,"data":"\n"}
+,{"stream_name":"stdout","time":18158.566879015,"data":"Epoch [21/30] Total Train Loss: 1.0012 | LR: 4.22e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":18159.976546867,"data":"--\u003e Skipped validation this epoch to save time. 'latest' checkpoint saved.\n"}
+,{"stream_name":"stdout","time":18159.97657899,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":18162.503987119,"data":"Batch [0/1587] DF Loss: 1.8510 | CH Loss: 0.6981\n"}
+,{"stream_name":"stdout","time":18185.889053428,"data":"Batch [50/1587] DF Loss: 0.0023 | CH Loss: 0.7069\n"}
+,{"stream_name":"stdout","time":18209.079923508,"data":"Batch [100/1587] DF Loss: 0.0006 | CH Loss: 0.6704\n"}
+,{"stream_name":"stdout","time":18232.148854687,"data":"Batch [150/1587] DF Loss: 0.0001 | CH Loss: 0.7016\n"}
+,{"stream_name":"stdout","time":18255.16775331,"data":"Batch [200/1587] DF Loss: 0.0002 | CH Loss: 0.7100\n"}
+,{"stream_name":"stdout","time":18278.197636131,"data":"Batch [250/1587] DF Loss: 0.0003 | CH Loss: 0.7198\n"}
+,{"stream_name":"stdout","time":18301.053775244,"data":"Batch [300/1587] DF Loss: 0.0004 | CH Loss: 0.6736\n"}
+,{"stream_name":"stdout","time":18324.200925414,"data":"Batch [350/1587] DF Loss: 0.0000 | CH Loss: 0.6795\n"}
+,{"stream_name":"stdout","time":18347.139080067,"data":"Batch [400/1587] DF Loss: 3.9509 | CH Loss: 0.6994\n"}
+,{"stream_name":"stdout","time":18370.010650412,"data":"Batch [450/1587] DF Loss: 0.0002 | CH Loss: 0.6741\n"}
+,{"stream_name":"stdout","time":18392.829102799,"data":"Batch [500/1587] DF Loss: 0.0001 | CH Loss: 0.6743\n"}
+,{"stream_name":"stdout","time":18415.52245493,"data":"Batch [550/1587] DF Loss: 0.0003 | CH Loss: 0.6922\n"}
+,{"stream_name":"stdout","time":18438.581062207,"data":"Batch [600/1587] DF Loss: 0.0005 | CH Loss: 0.6947\n"}
+,{"stream_name":"stdout","time":18461.559089281,"data":"Batch [650/1587] DF Loss: 1.6632 | CH Loss: 0.6940\n"}
+,{"stream_name":"stdout","time":18484.702094085,"data":"Batch [700/1587] DF Loss: 0.0001 | CH Loss: 0.7659\n"}
+,{"stream_name":"stdout","time":18507.382313058,"data":"Batch [750/1587] DF Loss: 0.0002 | CH Loss: 0.6923\n"}
+,{"stream_name":"stdout","time":18530.610701412,"data":"Batch [800/1587] DF Loss: 0.0350 | CH Loss: 0.7148\n"}
+,{"stream_name":"stdout","time":18553.38871271,"data":"Batch [850/1587] DF Loss: 0.0002 | CH Loss: 0.6900\n"}
+,{"stream_name":"stdout","time":18576.431474804,"data":"Batch [900/1587] DF Loss: 0.0005 | CH Loss: 0.6862\n"}
+,{"stream_name":"stdout","time":18599.384213746,"data":"Batch [950/1587] DF Loss: 0.0949 | CH Loss: 0.7073\n"}
+,{"stream_name":"stdout","time":18622.485699816,"data":"Batch [1000/1587] DF Loss: 0.0026 | CH Loss: 0.6749\n"}
+,{"stream_name":"stdout","time":18645.621527277,"data":"Batch [1050/1587] DF Loss: 0.0003 | CH Loss: 0.6871\n"}
+,{"stream_name":"stdout","time":18668.625614121,"data":"Batch [1100/1587] DF Loss: 0.0002 | CH Loss: 0.6943\n"}
+,{"stream_name":"stdout","time":18691.72308641,"data":"Batch [1150/1587] DF Loss: 0.0005 | CH Loss: 0.6738\n"}
+,{"stream_name":"stdout","time":18714.675678863,"data":"Batch [1200/1587] DF Loss: 0.0026 | CH Loss: 0.7202\n"}
+,{"stream_name":"stdout","time":18737.576490661,"data":"Batch [1250/1587] DF Loss: 0.0022 | CH Loss: 0.6933\n"}
+,{"stream_name":"stdout","time":18760.67751968,"data":"Batch [1300/1587] DF Loss: 0.0012 | CH Loss: 0.7031\n"}
+,{"stream_name":"stdout","time":18783.398485092,"data":"Batch [1350/1587] DF Loss: 0.0055 | CH Loss: 0.6818\n"}
+,{"stream_name":"stdout","time":18806.700097513,"data":"Batch [1400/1587] DF Loss: 0.0003 | CH Loss: 0.7033\n"}
+,{"stream_name":"stdout","time":18829.553027805,"data":"Batch [1450/1587] DF Loss: 0.0011 | CH Loss: 0.7086\n"}
+,{"stream_name":"stdout","time":18852.481359587,"data":"Batch [1500/1587] DF Loss: 0.0005 | CH Loss: 0.7107\n"}
+,{"stream_name":"stdout","time":18875.537402251,"data":"Batch [1550/1587] DF Loss: 0.0304 | CH Loss: 0.7060\n"}
+,{"stream_name":"stdout","time":18891.381939374,"data":"\n"}
+,{"stream_name":"stdout","time":18891.381989522,"data":"Epoch [22/30] Total Train Loss: 0.9629 | LR: 3.45e-05 | Time: 12.2 min\n"}
+,{"stream_name":"stdout","time":18891.381996406,"data":"--\u003e Running Evaluation on Clean 2019 Val Set (24844 samples)...\n"}
+,{"stream_name":"stdout","time":19205.663307768,"data":"Clean 2019 Val Loss: 0.0105 | Val Accuracy: 99.95% | Val EER: 0.4317%\n"}
+,{"stream_name":"stdout","time":19205.66335879,"data":"Early Stopping Counter: 5/5\n"}
+,{"stream_name":"stdout","time":19205.663365534,"data":"Early stopping triggered!\n"}
+,{"stream_name":"stdout","time":19205.663370858,"data":"Training Complete!\n"}
+,{"stream_name":"stdout","time":19205.822959723,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":19205.823013364,"data":"PREPARING ASVSPOOF 2021 LA EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":19205.823020546,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":19205.823025865,"data":"Scanning LA audio directories (this takes ~1 second)...\n"}
+,{"stream_name":"stdout","time":19218.04831768,"data":"Mapping 181566 LA metadata entries to files...\n"}
+,{"stream_name":"stdout","time":19219.351377438,"data":"LA Eval Label distribution: {1: 133360, 0: 14816}\n"}
+,{"stream_name":"stdout","time":19219.351412275,"data":"\n"}
+,{"stream_name":"stdout","time":19219.351417153,"data":"Successfully matched 148176 LA audio files!\n"}
+,{"stream_name":"stdout","time":19339.060690769,"data":"Loading checkpoint: /kaggle/working/best_hybrid_seed123.pth\n"}
+,{"stream_name":"stdout","time":19341.361292845,"data":"\n"}
+,{"stream_name":"stdout","time":19341.361327983,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":19341.361346247,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **LA** EVALUATION\n"}
+,{"stream_name":"stdout","time":19341.361352528,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":19341.361357476,"data":"\n"}
+,{"stream_name":"stdout","time":19341.361362718,"data":"Evaluating on ASVspoof 2021 LA Eval Set (148176 samples)...\n"}
+,{"stream_name":"stdout","time":19816.846195528,"data":"Evaluated 16000 files...\n"}
+,{"stream_name":"stdout","time":20272.773813399,"data":"Evaluated 32000 files...\n"}
+,{"stream_name":"stdout","time":20731.402773759,"data":"Evaluated 48000 files...\n"}
+,{"stream_name":"stdout","time":21193.28041038,"data":"Evaluated 64000 files...\n"}
+,{"stream_name":"stdout","time":21644.350137535,"data":"Evaluated 80000 files...\n"}
+,{"stream_name":"stdout","time":22108.684045602,"data":"Evaluated 96000 files...\n"}
+,{"stream_name":"stdout","time":22574.638718998,"data":"Evaluated 112000 files...\n"}
+,{"stream_name":"stdout","time":23046.462023427,"data":"Evaluated 128000 files...\n"}
+,{"stream_name":"stdout","time":23521.881222008,"data":"Evaluated 144000 files...\n"}
+,{"stream_name":"stdout","time":23639.114889003,"data":"\n"}
+,{"stream_name":"stdout","time":23639.114924565,"data":"Exporting LA predictions...\n"}
+,{"stream_name":"stdout","time":23639.166542674,"data":"LA Original scores successfully saved to: /kaggle/working/cm_scores_2021_LA_eval_original_hybrid_seed123.txt\n"}
+,{"stream_name":"stdout","time":23639.166575323,"data":"LA Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_LA_eval_inverted_hybrid_seed123.txt\n"}
+,{"stream_name":"stdout","time":23639.362706567,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":23639.362755129,"data":"PREPARING ASVSPOOF 2021 DF EVALUATION (FAST PARSE \u0026 TTA)\n"}
+,{"stream_name":"stdout","time":23639.362784527,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":23639.362789983,"data":"Scanning audio directories (this takes ~2 seconds)...\n"}
+,{"stream_name":"stdout","time":23643.754165169,"data":"Mapping 611829 metadata entries to files...\n"}
+,{"stream_name":"stdout","time":23648.462384465,"data":"DF Eval Label distribution: {1: 519059, 0: 14869}\n"}
+,{"stream_name":"stdout","time":23648.46241983,"data":"\n"}
+,{"stream_name":"stdout","time":23648.462425123,"data":"Successfully matched 533928 audio files!\n"}
+,{"stream_name":"stdout","time":23648.462429875,"data":"\n"}
+,{"stream_name":"stdout","time":23648.462434718,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":23648.462439969,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **DF** EVALUATION\n"}
+,{"stream_name":"stdout","time":23648.462444677,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":23648.462449402,"data":"\n"}
+,{"stream_name":"stdout","time":23648.462453994,"data":"Evaluating on ASVspoof 2021 DF Eval Set (533928 samples)...\n"}
+,{"stream_name":"stdout","time":23648.462459002,"data":"Test-Time Augmentation (TTA) is ENABLED. This will process every file twice. Grab a coffee!\n"}
+,{"stream_name":"stdout","time":24127.628419599,"data":"Evaluated 16000 files...\n"}
+,{"stream_name":"stdout","time":24551.328477284,"data":"Evaluated 32000 files...\n"}
+,{"stream_name":"stdout","time":24981.719579593,"data":"Evaluated 48000 files...\n"}
+,{"stream_name":"stdout","time":25412.571356084,"data":"Evaluated 64000 files...\n"}
+,{"stream_name":"stdout","time":25837.009374059,"data":"Evaluated 80000 files...\n"}
+,{"stream_name":"stdout","time":26266.395661007,"data":"Evaluated 96000 files...\n"}
+,{"stream_name":"stdout","time":26711.724202411,"data":"Evaluated 112000 files...\n"}
+,{"stream_name":"stdout","time":27161.318744512,"data":"Evaluated 128000 files...\n"}
+,{"stream_name":"stdout","time":27629.155025891,"data":"Evaluated 144000 files...\n"}
+,{"stream_name":"stdout","time":28086.240803579,"data":"Evaluated 160000 files...\n"}
+,{"stream_name":"stdout","time":28550.242692882,"data":"Evaluated 176000 files...\n"}
+,{"stream_name":"stdout","time":29015.321773513,"data":"Evaluated 192000 files...\n"}
+,{"stream_name":"stdout","time":29482.077047473,"data":"Evaluated 208000 files...\n"}
+,{"stream_name":"stdout","time":29962.837179212,"data":"Evaluated 224000 files...\n"}
+,{"stream_name":"stdout","time":30452.508672913,"data":"Evaluated 240000 files...\n"}
+,{"stream_name":"stdout","time":30923.481595028,"data":"Evaluated 256000 files...\n"}
+,{"stream_name":"stdout","time":31372.496543063,"data":"Evaluated 272000 files...\n"}
+,{"stream_name":"stdout","time":31822.554327626,"data":"Evaluated 288000 files...\n"}
+,{"stream_name":"stdout","time":32279.526614874,"data":"Evaluated 304000 files...\n"}
+,{"stream_name":"stdout","time":32727.919793838,"data":"Evaluated 320000 files...\n"}
+,{"stream_name":"stdout","time":33166.353869627,"data":"Evaluated 336000 files...\n"}
+,{"stream_name":"stdout","time":33601.801077233,"data":"Evaluated 352000 files...\n"}
+,{"stream_name":"stdout","time":34046.283789396,"data":"Evaluated 368000 files...\n"}
+,{"stream_name":"stdout","time":34537.193425343,"data":"Evaluated 384000 files...\n"}
+,{"stream_name":"stdout","time":35032.279636733,"data":"Evaluated 400000 files...\n"}
+,{"stream_name":"stdout","time":35666.595169813,"data":"Evaluated 416000 files...\n"}
+,{"stream_name":"stdout","time":36313.809109859,"data":"Evaluated 432000 files...\n"}
+,{"stream_name":"stdout","time":36974.726890656,"data":"Evaluated 448000 files...\n"}
+,{"stream_name":"stdout","time":37656.211690189,"data":"Evaluated 464000 files...\n"}
+,{"stream_name":"stdout","time":38337.160605798,"data":"Evaluated 480000 files...\n"}
+,{"stream_name":"stdout","time":39002.066055898,"data":"Evaluated 496000 files...\n"}
+,{"stream_name":"stdout","time":39636.27360044,"data":"Evaluated 512000 files...\n"}
+,{"stream_name":"stdout","time":40278.71125496,"data":"Evaluated 528000 files...\n"}
+,{"stream_name":"stdout","time":40508.482497343,"data":"\n"}
+,{"stream_name":"stdout","time":40508.482532106,"data":"Exporting predictions...\n"}
+,{"stream_name":"stdout","time":40509.278514521,"data":"DF Original scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_original_hybrid_seed123.txt\n"}
+,{"stream_name":"stdout","time":40509.278547415,"data":"DF Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_inverted_hybrid_seed123.txt\n"}
+,{"stream_name":"stdout","time":40627.120281911,"data":"LA: 148176 eval trials (14816 bona fide, 133360 spoof)\n"}
+,{"stream_name":"stdout","time":40743.924471267,"data":"DF: 533928 eval trials (14869 bona fide, 519059 spoof)\n"}
+,{"stream_name":"stdout","time":41177.735542987,"data":"\n"}
+,{"stream_name":"stdout","time":41177.735579162,"data":"EER (%) with 95% stratified bootstrap CI, B=2000\n"}
+,{"stream_name":"stdout","time":41177.73558433,"data":"track  model     run  eer  ci_low  ci_high\n"}
+,{"stream_name":"stdout","time":41177.735588586,"data":"   LA Hybrid    run1 3.18    2.99     3.36\n"}
+,{"stream_name":"stdout","time":41177.735592786,"data":"   LA  WavLM    run1 3.62    3.47     3.77\n"}
+,{"stream_name":"stdout","time":41177.735597059,"data":"   LA Hybrid seed123 3.53    3.37     3.70\n"}
+,{"stream_name":"stdout","time":41177.735606273,"data":"   DF Hybrid    run1 7.86    7.62     8.07\n"}
+,{"stream_name":"stdout","time":41177.735610141,"data":"   DF  WavLM    run1 8.31    8.08     8.49\n"}
+,{"stream_name":"stdout","time":41177.735612908,"data":"   DF Hybrid seed123 6.85    6.58     7.05\n"}
+,{"stream_name":"stdout","time":41177.735616173,"data":"\n"}
+,{"stream_name":"stdout","time":41177.735634759,"data":"Paired ΔEER = Hybrid − WavLM (pp); negative favours Hybrid. p = P(Δ \u003e= 0)\n"}
+,{"stream_name":"stdout","time":41177.735641746,"data":"track  run  delta_eer  ci_low  ci_high  p_one_sided\n"}
+,{"stream_name":"stdout","time":41177.735646763,"data":"   LA run1    -0.4436 -0.6082  -0.2954       0.0005\n"}
+,{"stream_name":"stdout","time":41177.735662051,"data":"   DF run1    -0.4506 -0.6057  -0.2825       0.0005\n"}
+,{"stream_name":"stdout","time":41177.735665522,"data":"\n"}
+,{"stream_name":"stdout","time":41177.735668627,"data":"Across runs: mean ± std EER (%)\n"}
+,{"stream_name":"stdout","time":41177.735671997,"data":"              mean   std  count\n"}
+,{"stream_name":"stdout","time":41177.735675194,"data":"track model                    \n"}
+,{"stream_name":"stdout","time":41177.735678506,"data":"DF    Hybrid  7.35  0.72      2\n"}
+,{"stream_name":"stdout","time":41177.735681821,"data":"      WavLM   8.31   NaN      1\n"}
+,{"stream_name":"stdout","time":41177.735685369,"data":"LA    Hybrid  3.36  0.25      2\n"}
+,{"stream_name":"stdout","time":41177.735688632,"data":"      WavLM   3.62   NaN      1\n"}
+,{"stream_name":"stderr","time":41183.975689457,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":41183.975719244,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":41184.161249453,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":41184.161287708,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":41184.771044076,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":41184.771077582,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":41184.839751666,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":41185.276198225,"data":"[NbConvertApp] Writing 205835 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":41187.668308696,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":41187.668341932,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":41187.697376999,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":41188.795933439,"data":"[NbConvertApp] Writing 637372 bytes to __results__.html\n"}
+]

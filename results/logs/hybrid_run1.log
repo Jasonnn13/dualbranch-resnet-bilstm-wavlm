@@ -1,0 +1,150 @@
+[{"stream_name":"stderr","time":12.082235345,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.082347354,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.082375387,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.082379992,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.882800702,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.882838605,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.882845715,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.882849861,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":37.879489001,"data":"Compute Device: cuda\n"}
+,{"stream_name":"stdout","time":37.879560873,"data":"GPU Model: Tesla T4\n"}
+,{"stream_name":"stdout","time":37.895623427,"data":"Config Loaded. Expected Temporal Frames: 251\n"}
+,{"stream_name":"stdout","time":58.424300274,"data":"Downloading: \"https://download.pytorch.org/models/resnet18-f37072fd.pth\" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth\n"}
+,{"stream_name":"stderr","time":58.425237298,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\n"}
+,{"stream_name":"stderr","time":58.526604496,"data":"\r  0%|          | 0.00/44.7M [00:00\u003c?, ?B/s]\r 26%|██▋       | 11.8M/44.7M [00:00\u003c00:00, 123MB/s]\n"}
+,{"stream_name":"stderr","time":58.62641296,"data":"\r 26%|██▋       | 11.8M/44.7M [00:00\u003c00:00, 123MB/s]\r 80%|███████▉  | 35.6M/44.7M [00:00\u003c00:00, 198MB/s]\n"}
+,{"stream_name":"stderr","time":58.664884115,"data":"\r 80%|███████▉  | 35.6M/44.7M [00:00\u003c00:00, 198MB/s]\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 196MB/s]\n"}
+,{"stream_name":"stderr","time":58.726730217,"data":"\r100%|██████████| 44.7M/44.7M [00:00\u003c00:00, 196MB/s]\n"}
+,{"stream_name":"stderr","time":58.726767681,"data":"\n"}
+,{"stream_name":"stderr","time":58.726771703,"data":"\n"}
+,{"stream_name":"stderr","time":58.898375694,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":58.898433026,"data":"\n"}
+,{"stream_name":"stderr","time":58.898440398,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":65.338492039,"data":"Verification Successful!\n"}
+,{"stream_name":"stdout","time":65.338542763,"data":"Input Waveform Shape: torch.Size([1, 64000])\n"}
+,{"stream_name":"stdout","time":65.338549831,"data":"Input Mel Shape: torch.Size([1, 1, 80, 251])\n"}
+,{"stream_name":"stdout","time":65.338555154,"data":"Input LFCC Shape: torch.Size([1, 1, 60, 251])\n"}
+,{"stream_name":"stdout","time":65.338559941,"data":"Model Output Shape: torch.Size([1, 2]) (Raw Logits)\n"}
+,{"stream_name":"stdout","time":65.53686093499999,"data":"Loading ASVspoof 2019 Train...\n"}
+,{"stream_name":"stdout","time":65.536911016,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":66.147239065,"data":"Mapping 25380 metadata lines...\n"}
+,{"stream_name":"stdout","time":66.14728978,"data":"  Label distribution: {1: 22800, 0: 2580}\n"}
+,{"stream_name":"stdout","time":66.147351189,"data":"\n"}
+,{"stream_name":"stdout","time":66.147357162,"data":"Loading ASVspoof 2019 Dev (Validation)...\n"}
+,{"stream_name":"stdout","time":66.147362041,"data":"Scanning directory flac (FAST)...\n"}
+,{"stream_name":"stdout","time":66.615360422,"data":"Mapping 24844 metadata lines...\n"}
+,{"stream_name":"stdout","time":66.615390533,"data":"  Label distribution: {1: 22296, 0: 2548}\n"}
+,{"stream_name":"stdout","time":66.61539435,"data":"\n"}
+,{"stream_name":"stdout","time":66.615397336,"data":"Train samples (2019): 25380\n"}
+,{"stream_name":"stdout","time":66.615400363,"data":"Val samples (2019): 24844\n"}
+,{"stream_name":"stdout","time":66.615403327,"data":"\n"}
+,{"stream_name":"stdout","time":66.6154062,"data":"All DataLoaders ready for training!\n"}
+,{"stream_name":"stdout","time":76.474807547,"data":"Loaded checkpoint from epoch 13, best EER: 0.002354788069831006\n"}
+,{"stream_name":"stdout","time":76.674900921,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":76.674928721,"data":"PREPARING ASVSPOOF 2021 DF EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":76.674932924,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":76.674936213,"data":"Scanning audio directories (this takes ~2 seconds)...\n"}
+,{"stream_name":"stdout","time":98.212436794,"data":"Mapping 611829 metadata entries to files...\n"}
+,{"stream_name":"stdout","time":103.987607109,"data":"DF Eval Label distribution: {1: 589212, 0: 22617}\n"}
+,{"stream_name":"stdout","time":103.987647918,"data":"\n"}
+,{"stream_name":"stdout","time":103.987654024,"data":"Successfully matched 611829 audio files!\n"}
+,{"stream_name":"stdout","time":103.987659157,"data":"\n"}
+,{"stream_name":"stdout","time":103.987664061,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":103.987669137,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **DF** EVALUATION\n"}
+,{"stream_name":"stdout","time":103.987674441,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":690.611866423,"data":"Evaluated 12864 files...\n"}
+,{"stream_name":"stdout","time":1277.9889027,"data":"Evaluated 25664 files...\n"}
+,{"stream_name":"stdout","time":1866.138366097,"data":"Evaluated 38464 files...\n"}
+,{"stream_name":"stdout","time":2453.463012137,"data":"Evaluated 51264 files...\n"}
+,{"stream_name":"stdout","time":3040.744500109,"data":"Evaluated 64064 files...\n"}
+,{"stream_name":"stdout","time":3625.484597737,"data":"Evaluated 76864 files...\n"}
+,{"stream_name":"stdout","time":4210.699479471,"data":"Evaluated 89664 files...\n"}
+,{"stream_name":"stdout","time":4797.845397703,"data":"Evaluated 102464 files...\n"}
+,{"stream_name":"stdout","time":5385.240083767,"data":"Evaluated 115264 files...\n"}
+,{"stream_name":"stdout","time":5971.483081152,"data":"Evaluated 128064 files...\n"}
+,{"stream_name":"stdout","time":6558.822891384,"data":"Evaluated 140864 files...\n"}
+,{"stream_name":"stdout","time":7144.205597969,"data":"Evaluated 153664 files...\n"}
+,{"stream_name":"stdout","time":7728.211945265,"data":"Evaluated 166464 files...\n"}
+,{"stream_name":"stdout","time":8314.744050797,"data":"Evaluated 179264 files...\n"}
+,{"stream_name":"stdout","time":8901.184548634,"data":"Evaluated 192064 files...\n"}
+,{"stream_name":"stdout","time":9488.578757793,"data":"Evaluated 204864 files...\n"}
+,{"stream_name":"stdout","time":10075.592026455,"data":"Evaluated 217664 files...\n"}
+,{"stream_name":"stdout","time":10661.897292725,"data":"Evaluated 230464 files...\n"}
+,{"stream_name":"stdout","time":11247.34280005,"data":"Evaluated 243264 files...\n"}
+,{"stream_name":"stdout","time":11830.878973738,"data":"Evaluated 256064 files...\n"}
+,{"stream_name":"stdout","time":12414.245018009,"data":"Evaluated 268864 files...\n"}
+,{"stream_name":"stdout","time":13000.296196714,"data":"Evaluated 281664 files...\n"}
+,{"stream_name":"stdout","time":13586.351490914,"data":"Evaluated 294464 files...\n"}
+,{"stream_name":"stdout","time":14172.021781837,"data":"Evaluated 307264 files...\n"}
+,{"stream_name":"stdout","time":14757.594342128,"data":"Evaluated 320064 files...\n"}
+,{"stream_name":"stdout","time":15341.827749904,"data":"Evaluated 332864 files...\n"}
+,{"stream_name":"stdout","time":15927.258688731,"data":"Evaluated 345664 files...\n"}
+,{"stream_name":"stdout","time":16513.428230087,"data":"Evaluated 358464 files...\n"}
+,{"stream_name":"stdout","time":17100.361321986,"data":"Evaluated 371264 files...\n"}
+,{"stream_name":"stdout","time":17686.306187452,"data":"Evaluated 384064 files...\n"}
+,{"stream_name":"stdout","time":18272.043013058,"data":"Evaluated 396864 files...\n"}
+,{"stream_name":"stdout","time":18855.703686178,"data":"Evaluated 409664 files...\n"}
+,{"stream_name":"stdout","time":19441.721709211,"data":"Evaluated 422464 files...\n"}
+,{"stream_name":"stdout","time":20028.3553254,"data":"Evaluated 435264 files...\n"}
+,{"stream_name":"stdout","time":20613.907509677,"data":"Evaluated 448064 files...\n"}
+,{"stream_name":"stdout","time":21200.228471898,"data":"Evaluated 460864 files...\n"}
+,{"stream_name":"stdout","time":21785.79359391,"data":"Evaluated 473664 files...\n"}
+,{"stream_name":"stdout","time":22367.277772089,"data":"Evaluated 486464 files...\n"}
+,{"stream_name":"stdout","time":22950.081779803,"data":"Evaluated 499264 files...\n"}
+,{"stream_name":"stdout","time":23532.298944027,"data":"Evaluated 512064 files...\n"}
+,{"stream_name":"stdout","time":24114.485657772,"data":"Evaluated 524864 files...\n"}
+,{"stream_name":"stdout","time":24697.033721455,"data":"Evaluated 537664 files...\n"}
+,{"stream_name":"stdout","time":25278.356424529,"data":"Evaluated 550464 files...\n"}
+,{"stream_name":"stdout","time":25862.603827651,"data":"Evaluated 563264 files...\n"}
+,{"stream_name":"stdout","time":26447.523101769,"data":"Evaluated 576064 files...\n"}
+,{"stream_name":"stdout","time":27029.99544295,"data":"Evaluated 588864 files...\n"}
+,{"stream_name":"stdout","time":27612.46611837,"data":"Evaluated 601664 files...\n"}
+,{"stream_name":"stdout","time":28075.86735938,"data":"\n"}
+,{"stream_name":"stdout","time":28075.867396875,"data":"Exporting predictions...\n"}
+,{"stream_name":"stdout","time":28076.82461174,"data":"DF Original scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_original.txt\n"}
+,{"stream_name":"stdout","time":28076.824645804,"data":"DF Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_DF_eval_inverted.txt\n"}
+,{"stream_name":"stdout","time":28077.007070726,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":28077.007106721,"data":"PREPARING ASVSPOOF 2021 LA EVALUATION (FAST PARSE)\n"}
+,{"stream_name":"stdout","time":28077.007111474,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":28077.007115258,"data":"Scanning LA audio directories (this takes ~1 second)...\n"}
+,{"stream_name":"stdout","time":28082.52911072,"data":"Mapping 181566 LA metadata entries to files...\n"}
+,{"stream_name":"stdout","time":28083.87335404,"data":"LA Eval Label distribution: {1: 163114, 0: 18452}\n"}
+,{"stream_name":"stdout","time":28083.873433329,"data":"\n"}
+,{"stream_name":"stdout","time":28083.873440299,"data":"Successfully matched 181566 LA audio files!\n"}
+,{"stream_name":"stdout","time":28083.873444447,"data":"\n"}
+,{"stream_name":"stdout","time":28083.873447941,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":28083.87345159,"data":"GENERATING CM SCORES FOR ASVspoof 2021 **LA** EVALUATION\n"}
+,{"stream_name":"stdout","time":28083.873455333,"data":"==================================================\n"}
+,{"stream_name":"stdout","time":28083.873458941,"data":"\n"}
+,{"stream_name":"stdout","time":28083.873462302,"data":"Evaluating on ASVspoof 2021 LA Eval Set (181566 samples)...\n"}
+,{"stream_name":"stdout","time":28675.120773381,"data":"Evaluated 12864 files...\n"}
+,{"stream_name":"stdout","time":29263.212977916,"data":"Evaluated 25664 files...\n"}
+,{"stream_name":"stdout","time":29848.670508523,"data":"Evaluated 38464 files...\n"}
+,{"stream_name":"stdout","time":30434.890325134,"data":"Evaluated 51264 files...\n"}
+,{"stream_name":"stdout","time":31019.615731933,"data":"Evaluated 64064 files...\n"}
+,{"stream_name":"stdout","time":31603.164802404,"data":"Evaluated 76864 files...\n"}
+,{"stream_name":"stdout","time":32187.949031572,"data":"Evaluated 89664 files...\n"}
+,{"stream_name":"stdout","time":32773.423505203,"data":"Evaluated 102464 files...\n"}
+,{"stream_name":"stdout","time":33358.171975188,"data":"Evaluated 115264 files...\n"}
+,{"stream_name":"stdout","time":33942.788421712,"data":"Evaluated 128064 files...\n"}
+,{"stream_name":"stdout","time":34527.117789383,"data":"Evaluated 140864 files...\n"}
+,{"stream_name":"stdout","time":35113.538278192,"data":"Evaluated 153664 files...\n"}
+,{"stream_name":"stdout","time":35695.6914027,"data":"Evaluated 166464 files...\n"}
+,{"stream_name":"stdout","time":36278.558236982,"data":"Evaluated 179264 files...\n"}
+,{"stream_name":"stdout","time":36383.191338356,"data":"\n"}
+,{"stream_name":"stdout","time":36383.191383997,"data":"Exporting LA predictions...\n"}
+,{"stream_name":"stdout","time":36383.340634528,"data":"LA Original scores successfully saved to: /kaggle/working/cm_scores_2021_LA_eval_original.txt\n"}
+,{"stream_name":"stdout","time":36383.340679428,"data":"LA Inverted scores successfully saved to: /kaggle/working/cm_scores_2021_LA_eval_inverted.txt\n"}
+,{"stream_name":"stderr","time":36389.530267611,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":36389.5303319,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":36389.782197538,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":36389.782227156,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":36390.464311359,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":36390.464348063,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":36390.530025195,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":36390.87875942,"data":"[NbConvertApp] Writing 142040 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":36393.304416376,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":36393.304479777,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":36393.352395614,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":36394.519468643,"data":"[NbConvertApp] Writing 568307 bytes to __results__.html\n"}
+]
