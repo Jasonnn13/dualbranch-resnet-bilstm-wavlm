@@ -163,9 +163,34 @@ All experiments were run on Kaggle's T4×2 GPU environment (PyTorch + torchaudio
 
 ### Cross-domain evaluation (ASVspoof 2021, out-of-domain)
 
+Official ASVspoof 2021 EER on the `eval` phase trials (LA: 148,176 · DF: 533,928). WavLM and Hybrid are mean ± std over 3 independent training runs (one unseeded run, seed 42, seed 123); ResNet18 and BiLSTM are single runs.
+
 | Model                                        | 2021 LA EER     | 2021 DF EER     |
 | -------------------------------------------- | --------------- | --------------- |
 | ResNet18                                     | 20.28%          | 19.63%          |
 | BiLSTM                                       | 17.96%          | 28.64%          |
-| WavLM                                        | **3.62%** | 8.31%           |
-| **Hybrid (ResNet18 + BiLSTM + WavLM)** | 5.58%           | **7.63%** |
+| WavLM                                        | 3.90 ± 0.55%    | 8.59 ± 0.43%    |
+| **Hybrid (ResNet18 + BiLSTM + WavLM)** | **3.61 ± 0.48%** | **7.77 ± 0.79%** |
+
+The Hybrid has the lower mean EER on both tracks and is significantly better than WavLM in 2 of 3 paired runs per track (seed 42 favours WavLM), so the advantage holds on average but depends on initialization. Per-run EERs with 95% bootstrap CIs and paired tests are in [`results/RESULTS.md`](results/RESULTS.md).
+
+> **Revision note:** the first submission reported a single Hybrid run (LA 5.58%, DF 7.63%). Those numbers could not be reproduced from any saved output and were replaced by the runs above. The state of this repository at first submission is tagged [`v1-submission`](../../tree/v1-submission).
+
+## Open data and reproducibility
+
+| Path | Contents |
+| ---- | -------- |
+| [`results/scores/`](results/scores) | CM score files for every run (`model/run/cm_scores_2021_{LA,DF}_eval_inverted*.txt`; higher = more bona fide, the official convention) |
+| [`results/logs/`](results/logs) | Kaggle run logs (training curves, best epoch, 2019 dev EER, eval progress) |
+| [`results/bootstrap_eer.csv`](results/bootstrap_eer.csv), [`results/bootstrap_delta.csv`](results/bootstrap_delta.csv) | EER with 95% CI per run, and paired ΔEER (Hybrid − WavLM) per run |
+| [`notebooks/revision/`](notebooks/revision) | Kaggle notebooks for the seeded runs (same architecture and hyperparameters as the original run, plus seeding and eval-only/resume modes) |
+| [`stats/`](stats) | EER, bootstrap, and official eval-package check scripts |
+
+```bash
+pip install numpy pandas
+# keys: ASVspoof 2021 LA/DF keys (keys/{LA,DF}/CM/trial_metadata.txt) from asvspoof.org
+python stats/bootstrap.py --keys <keys dir>
+# cross-check with the official package (EER only)
+git clone https://github.com/asvspoof-challenge/2021
+python stats/official_check.py --package 2021/eval-package --keys <keys dir>
+```
