@@ -169,12 +169,12 @@ Official ASVspoof 2021 EER on the `eval` phase trials (LA: 148,176 · DF: 533,92
 | -------------------------------------------- | --------------- | --------------- |
 | ResNet18                                     | 20.28%          | 19.63%          |
 | BiLSTM                                       | 17.96%          | 28.64%          |
-| WavLM                                        | 3.90 ± 0.55%    | 8.59 ± 0.43%    |
-| **Hybrid (ResNet18 + BiLSTM + WavLM)** | **3.61 ± 0.48%** | **7.77 ± 0.79%** |
+| WavLM                                        | **3.90 ± 0.55%** | 8.59 ± 0.43%    |
+| Hybrid (ResNet18 + BiLSTM + WavLM)           | 4.41 ± 1.06%    | **7.69 ± 0.79%** |
 
-The Hybrid has the lower mean EER on both tracks and is significantly better than WavLM in 2 of 3 paired runs per track (seed 42 favours WavLM), so the advantage holds on average but depends on initialization. Per-run EERs with 95% bootstrap CIs and paired tests are in [`results/RESULTS.md`](results/RESULTS.md).
+On DF, the Hybrid has the lower mean EER and is significantly better than WavLM in 2 of 3 paired runs (seed 42 is not significant). On LA, WavLM has the lower mean EER: the Hybrid is significantly better only in seed 123, and WavLM in the unseeded run and seed 42. The gap between the two models depends on initialization. Per-run EERs with 95% bootstrap CIs and paired tests are in [`results/RESULTS.md`](results/RESULTS.md).
 
-> **Revision note:** the first submission reported a single Hybrid run (LA 5.58%, DF 7.63%). Those numbers could not be reproduced from any saved output and were replaced by the runs above. The state of this repository at first submission is tagged [`v1-submission`](../../tree/v1-submission).
+> **Revision note:** the first submission reported a single Hybrid run (LA 5.58%, DF 7.63%, Kaggle `benedictusjason/hybrid-thesis` Version 82). That run is kept as the unseeded run above, and two seeded runs were added. The state of this repository at first submission is tagged [`v1-submission`](../../tree/v1-submission).
 
 ## Open data and reproducibility
 

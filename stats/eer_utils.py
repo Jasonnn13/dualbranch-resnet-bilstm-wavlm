@@ -7,10 +7,10 @@ SCORES = Path(__file__).resolve().parent.parent / "results" / "scores"
 # (model, run) -> score file pattern; {track} is LA or DF.
 # All files are *_inverted: higher score = more bona fide (official convention).
 RUNS = {
-    ("Hybrid", "run1"): "hybrid/run1/cm_scores_2021_{track}_eval_inverted.txt",
+    ("Hybrid", "unseeded"): "hybrid/unseeded/cm_scores_2021_{track}_eval_inverted.txt",
     ("Hybrid", "seed42"): "hybrid/seed42/cm_scores_2021_{track}_eval_inverted_hybrid_seed42.txt",
     ("Hybrid", "seed123"): "hybrid/seed123/cm_scores_2021_{track}_eval_inverted_hybrid_seed123.txt",
-    ("WavLM", "run1"): "wavlm/run1/cm_scores_2021_{track}_eval_inverted.txt",
+    ("WavLM", "unseeded"): "wavlm/unseeded/cm_scores_2021_{track}_eval_inverted.txt",
     ("WavLM", "seed42"): "wavlm/seed42/cm_scores_2021_{track}_eval_inverted_wavlm_seed42.txt",
     ("WavLM", "seed123"): "wavlm/seed123/cm_scores_2021_{track}_eval_inverted_wavlm_seed123.txt",
 }
